@@ -154,8 +154,8 @@ include "./templates/header.php";
                     <div class="card-body">
                     <!--<div class="table-responsive">-->
                     <div class="datatable-wrapper">
-                    <table id="dataset_sample" class="table table-hover table-bordered">
-                        <thead>
+                    <table id="dataset_sample" class="table table-hover table-bordered" style="vertical-align: middle;">
+                        <thead style="vertical-align: middle;">
                         <tr>
                             <th>Dataset ID</th>
                             <th>Sample ID</th>
@@ -180,6 +180,26 @@ include "./templates/header.php";
                     <!--</div>-->
                 </div>
 
+                <img
+                        src="./public/image/ChangeButton/T-S.png"
+                        alt="Clickable Image"
+                        style="cursor: pointer;"
+                        onclick="redirectToSEVersion()"
+                />
+
+                <script>
+                    function redirectToSEVersion() {
+                        // 获取当前 URL
+                        const currentUrl = window.location.href;
+
+                        // 替换 detail_study.php 为 detail_study_SE.php
+                        const newUrl = currentUrl.replace("detail_study.php", "detail_study_SE.php");
+
+                        // 跳转到新 URL
+                        window.location.href = newUrl;
+                    }
+                </script>
+
                 <!--eRNA List-->
                 <div class="card" id="c2" style="margin-bottom:10px;padding-right: 0; padding-left: 0;">
                     <div class="card-header" style="width: 100%; height: 80px; color: #0362a4;font-size: larger; font-weight: bolder;display: flex; align-items: center;">
@@ -196,8 +216,8 @@ include "./templates/header.php";
 
                     <!--<div class="table-responsive">-->
                     <div class="datatable-wrapper">
-                        <table id="dataset_erna" class="table table-hover table-bordered" style="width: 100%;max-width: 100%; overflow-x: auto; table-layout: auto;">
-                            <thead>
+                        <table id="dataset_erna" class="table table-hover table-bordered" style="width: 100%;vertical-align: middle;max-width: 100%; overflow-x: auto; table-layout: auto;">
+                            <thead style="vertical-align: middle;">
                             <tr>
                                 <th>eRNA ID</th>
                                 <th>Chrom</th>
@@ -344,7 +364,7 @@ include "./templates/header.php";
                             <div class="col-lg-12">
                                 <table id="marker_features" class="table table-hover table-bordered" style="width: 100%;max-width: 100%; overflow-x: auto; table-layout: auto;">
                                     <!--class="table table-hover table-striped table-bordered"-->
-                                    <thead>
+                                    <thead style="vertical-align: middle;">
                                     <tr>
                                         <th>Name</th>
                                         <th>p_val_adj</th>

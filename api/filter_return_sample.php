@@ -51,7 +51,7 @@ if (!empty($select_treatment)) {
 
 
 $all_result = Db::table('OverallSample')->where($map)->
-field('DatasetID,  Species,  Tissue, CellType, Disease, Treatment, Technology')->select();
+field('DatasetID,  Species,  Tissue, CellType, Disease, Technology')->select();
 
 
 //实现filter的参数传递

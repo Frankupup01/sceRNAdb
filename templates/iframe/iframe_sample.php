@@ -72,11 +72,23 @@ include "./base_iframe_test.php";
                         </select>
                     </div>
 
-
+<!--
                     <div class="mt-2">
+                        <a id='op2' class="btn btn-default" onclick="Turn()"  type="submit"><b>Search Typical eRNAs</b></a>
+                        <a id='op3' class="btn btn-default" onclick="Turn2()"  type="submit"><b>Search Super eRNAs</b></a>
                         <a onclick="populateExamples()" class="btn btn-default"><b>Example</b></a>
-                        <a id='op2' class="btn btn-default" onclick="Turn()"  type="submit"><b>Search</b></a>
                         <button class="btn btn-default"  id="reset"><b>Reset</b></button>
+                    </div>
+-->
+                    <div class="mt-2">
+                        <div style="margin-bottom: 8px;">
+                            <a id='op2' class="btn btn-default" onclick="Turn()" type="submit"><b>Search Typical eRNAs</b></a>
+                            <a id='op3' class="btn btn-default" onclick="Turn2()" type="submit"><b>Search Super eRNAs</b></a>
+                        </div>
+                        <div>
+                            <a onclick="populateExamples()" class="btn btn-default"><b>Example</b></a>
+                            <button class="btn btn-default" id="reset"><b>Reset</b></button>
+                        </div>
                     </div>
 
                     <div style="color:darkgray;">
@@ -285,6 +297,18 @@ include "./base_iframe_test.php";
 
 
         parent.location.href = '../../sample_result.php?Species=' + species + '&Tech=' + encodeURIComponent(techtype) + '&Tissue=' + encodeURIComponent(tissue) + '&Cell=' + encodeURIComponent(cell) + '&Sample=' + encodeURIComponent(sample);
+    }
+
+    function Turn2() {
+
+        var species = $("#Spe").val();
+        var techtype = $("#Tech").val();
+        var tissue = $("#Tissue").val();
+        var cell = $("#Cell").val();
+        var sample = $("#Sample").val();
+
+
+        parent.location.href = '../../sample_SE_result.php?Species=' + species + '&Tech=' + encodeURIComponent(techtype) + '&Tissue=' + encodeURIComponent(tissue) + '&Cell=' + encodeURIComponent(cell) + '&Sample=' + encodeURIComponent(sample);
     }
 
 </script>

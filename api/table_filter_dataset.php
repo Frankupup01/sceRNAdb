@@ -55,7 +55,7 @@ $totalRecords = Db::table('OverallSummary')->where($map)->count();
     where(function ($query) use ($searchQuery) {
         $query->whereOr([
             ["Species", "like", $searchQuery],
-            //["title", "like", $searchQuery],
+            ["Reference", "like", $searchQuery],
             ["Accessions", "like", $searchQuery],
             ["Tissue", "like", $searchQuery],
             ["Technology", "like", $searchQuery],
@@ -65,19 +65,20 @@ $totalRecords = Db::table('OverallSummary')->where($map)->count();
 
 
 
+    #$result = Db::table('OverallSummary')->where($map)->
     $result = Db::table('OverallSummary')->where($map)->
 
 //调用闭包函数query并且允许使用外部变量searchQuery
     where(function ($query) use ($searchQuery) {
         $query->whereOr([
             ["Species", "like", $searchQuery],
-            //["title", "like", $searchQuery],
+            ["Reference", "like", $searchQuery],
             ["Accessions", "like", $searchQuery],
             ["Tissue", "like", $searchQuery],
             ["Technology", "like", $searchQuery],
         ]);
     })->
-    field('Species, Reference, Accessions, Tissue, Technology')->
+    field('Species, Reference, Accessions, Tissue, Technology, Sort_Index')->
     order($columnName . ' ' . $columnSortOrder)->
     limit($row, $rowperpage)->select();
 

@@ -20,25 +20,24 @@ include "./templates/base.php";
 
 
 <!--index page分区-->
-<div class="container-fluid" >
+<div class="container-fluid" style="width: 80%">
     <!-- Columns are 66% vs 33% wide -->
     <div class="row">
-        <div class="col-lg-8 ">
+        <div class="col-lg-6 ">
              <div class="card" id="card1">
                  <div class="card-header" id="card-header1">
-                     Welcome to eRNA scAtlas
+                     Welcome to sceRNAdb
                  </div>
                  <div class="card-body">
                      <div style="text-indent: 2em;">
-                         Enhancer RNA (eRNA) is a type of transcribed RNA from distal enhancers, which plays key roles in transcription regulatory circuitry to mediate the activation of target gene. Here, we developed the eRNA database (eRNA scAtlas, which aims to document a large number of available resources of human and mouse eRNAs, provide comprehensive annotation and analyses for eRNAs.
-                     </div>
-                     <div style="text-indent: 2em;">
+                         sceRANdb is a comprehensive database that provides single-cell level eRNA expression data obtained through full-length scRNA-seq. It includes eRNA information across various tissue and cell types in humans, mice, and four other model organisms. In addition, sceRANdb integrates multiple annotation datasets, including SNPs, target genes, RNA interaction sites, transposable elements, eQTLs, caQTLs, haQTLs, DNA methylation, RNA methylation (m5C, m6A), TFBS, and RBPs. Overall, sceRANdb offers researchers, clinicians, and university students a streamlined platform for exploring and analyzing eRNA data at the single-cell level.</div>
+                     <!--<div style="text-indent: 2em;">
                         eRNA scAtlas provides the detailed and abundant (epi) genetic annotations in ChIP-seq based eRNA regions, such as super enhancer, enhancer, common SNPs, motif changes, expression quantitative trait locus (eQTL), risk SNPs, transcription factor binding sites (TFBSs), CRISPR/Cas9 target sites, DNase I hypersensitivity sites (DHSs), chromatin accessibility regions, methylation sites, chromatin interactions regions and TADs. eRNA scAtlas also provides eRNA-associated downstream target genes by mapping eRNA regions into genomes via five methods. We believe that eRNA scAtlas could become a useful and effective platform for exploring potential functions and regulation of eRNAs in diseases and biological processes.
-                     </div>
+                     </div>-->
                  </div>
              </div>
         </div>
-        <div class="col-lg-4 ">
+        <div class="col-lg-6 ">
             <div class="row" style="margin-right: 20px;">
                 <div class="card" id="card2" style="padding-right: 0; padding-left: 0;">
                     <div class="card-header" id="card-header2">
@@ -83,7 +82,7 @@ include "./templates/base.php";
         <div class="col-lg-7">
             <div class="card" id="card5">
                 <div class="card-header" id="card-header5">
-                    Explore eRNA scAltas
+                    Explore sceRNAdb
                 </div>
                 <div class="card-body">
                     <div class="row">
@@ -102,7 +101,7 @@ include "./templates/base.php";
 
 
 
-
+<!--
 <script>
     window.onload = function() {
         const lastVisit = localStorage.getItem('lastVisit');
@@ -115,7 +114,7 @@ include "./templates/base.php";
         }
     };
 </script>
-
+-->
 <!--
 <script>
     window.onload = function() {

@@ -38,7 +38,7 @@ include "./base_iframe_test.php";
 
                 <!-- Tech List -->
                 <div class="center-block" id="t1">
-                    <label for="specie_lncs" class="font-weight-bold" style="font-size: 14px;"><span style="color: red;">Step2</span>: Please to choose Sequencing Technology</label>
+                    <label for="specie_lncs" class="font-weight-bold" style="font-size: 14px;"><span style="color: red;">Step3</span>: Please to choose Sequencing Technology</label>
                     <select class="selectpicker form-control" id="Tech"
                             title="Select a Sequencing type(e.g.'Smart-seq2')" data-container="body"
                             data-live-search="true" data-hide-disabled="true" data-actions-box="true"
@@ -48,7 +48,7 @@ include "./base_iframe_test.php";
 
                 <div class="center-block" id="t2">
                     <!-- Tissue List-->
-                    <label  class="font-weight-bold text-justify" style="font-size: 14px;"><span style="color: red;">Step3</span>: Tissue type</label>
+                    <label  class="font-weight-bold text-justify" style="font-size: 14px;"><span style="color: red;">Step4</span>: Tissue type</label>
                     <select class="selectpicker form-control" id="Tissue"
                             title="Select Tissue Type" data-container="body"
                             data-live-search="true" data-hide-disabled="true" data-actions-box="true"
@@ -58,7 +58,7 @@ include "./base_iframe_test.php";
 
                 <div class="center-block" id="t3">
                     <!-- Cell List-->
-                    <label  class="font-weight-bold text-justify" style="font-size: 14px;"><span style="color: red;">Step4</span>: Cell type</label>
+                    <label  class="font-weight-bold text-justify" style="font-size: 14px;"><span style="color: red;">Step5</span>: Cell type</label>
                     <select class="selectpicker form-control" id="Cell"
                             title="Select Cell Type" data-container="body"
                             data-live-search="true" data-hide-disabled="true" data-actions-box="true"
@@ -67,10 +67,24 @@ include "./base_iframe_test.php";
                 </div>
 
 
+
+<!--
                 <div class="mt-2">
+                    <a id='op2' class="btn btn-default" onclick="Turn()"  type="submit"><b>Search Typical eRNAs</b></a>
+                    <a id='op3' class="btn btn-default" onclick="Turn2()"  type="submit"><b>Search Super eRNAs</b></a>
                     <a onclick="populateExamples()" class="btn btn-default"><b>Example</b></a>
-                    <a id='op2' class="btn btn-default" onclick="Turn()"  type="submit"><b>Search</b></a>
                     <button class="btn btn-default"  id="reset"><b>Reset</b></button>
+                </div>
+-->
+                <div class="mt-2">
+                    <div style="margin-bottom: 8px;">
+                        <a id='op2' class="btn btn-default" onclick="Turn()" type="submit"><b>Search Typical eRNAs</b></a>
+                        <a id='op3' class="btn btn-default" onclick="Turn2()" type="submit"><b>Search Super eRNAs</b></a>
+                    </div>
+                    <div>
+                        <a onclick="populateExamples()" class="btn btn-default"><b>Example</b></a>
+                        <button class="btn btn-default" id="reset"><b>Reset</b></button>
+                    </div>
                 </div>
 
 				<div style="color:darkgray;">
@@ -245,6 +259,23 @@ include "./base_iframe_test.php";
             var End = range[1]; // 结束位置
 
             parent.location.href = '../../region_result.php?Chr=' + Chr + '&Start=' + Start + '&End=' + End  + '&Species=' + species + '&Tech=' + encodeURIComponent(techtype) + '&Tissue=' + encodeURIComponent(tissue) + '&Cell=' + encodeURIComponent(cell);
+        }
+
+        function Turn2() {
+
+            var species = $("#Spe").val();
+            var techtype = $("#Tech").val();
+            var tissue = $("#Tissue").val();
+            var cell = $("#Cell").val();
+
+            var region = $('#Region').val(); // 获取Region的值
+            var parts = region.split(':'); // 分割字符串，得到["chr1", "1438079-1641840"]
+            var Chr = parts[0]; // 染色体编号
+            var range = parts[1].split('-'); // 分割字符串，得到["1438079", "1641840"]
+            var Start = range[0]; // 起始位置
+            var End = range[1]; // 结束位置
+
+            parent.location.href = '../../region_SE_result.php?Chr=' + Chr + '&Start=' + Start + '&End=' + End  + '&Species=' + species + '&Tech=' + encodeURIComponent(techtype) + '&Tissue=' + encodeURIComponent(tissue) + '&Cell=' + encodeURIComponent(cell);
         }
 
     </script>

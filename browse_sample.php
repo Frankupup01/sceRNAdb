@@ -27,8 +27,11 @@ include "./templates/header.php";
                     <thead style="background-color: #286ea7">
                     <tr>
                         <th>
-                            <div class='list-group-item'>
-                                <h4>Dataset</h4>
+                            <div class='list-group-item' style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                                <h4 style="margin: 0; color: white; text-align: center; ">Dataset</h4>
+                                <a href="./browse_dataset.php">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none"><path fill="#eab308" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" opacity=".16"/><path stroke="#eab308" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM15 10l-4 4m0-4l4 4"/></g></svg>
+                                </a>
 
                             </div>
                         </th>
@@ -46,9 +49,12 @@ include "./templates/header.php";
                     <thead style="background-color: #286ea7">
                     <tr>
                         <th>
-                            <div class='list-group-item'>
-                                <h4>Species</h4>
-                                <!--函数：selectMenu; 点击显示所有选项栏-->
+                            <div class='list-group-item' style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                                <h4 style="margin: 0; color: white; text-align: center; ">Species</h4>
+                                <a href="./browse_sample.php">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none"><path fill="#eab308" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" opacity=".16"/><path stroke="#eab308" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM15 10l-4 4m0-4l4 4"/></g></svg>
+                                </a>
+
                             </div>
                         </th>
                     </tr>
@@ -66,8 +72,12 @@ include "./templates/header.php";
                     <thead style="background-color: #286ea7">
                     <tr>
                         <th>
-                            <div class='list-group-item'>
-                                <h4>Tissue Type</h4>
+                            <div class='list-group-item' style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                                <h4 style="margin: 0; color: white; text-align: center; ">Tissue/Cell line</h4>
+                                <a href="./browse_sample.php">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none"><path fill="#eab308" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" opacity=".16"/><path stroke="#eab308" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM15 10l-4 4m0-4l4 4"/></g></svg>
+                                </a>
+
                             </div>
                         </th>
                     </tr>
@@ -82,8 +92,12 @@ include "./templates/header.php";
                     <thead style="background-color: #286ea7">
                     <tr>
                         <th>
-                            <div class='list-group-item'>
-                                <h4>Cell Type</h4>
+                            <div class='list-group-item' style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                                <h4 style="margin: 0; color: white; text-align: center; ">Cell Type</h4>
+                                <a href="./browse_sample.php">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none"><path fill="#eab308" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" opacity=".16"/><path stroke="#eab308" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM15 10l-4 4m0-4l4 4"/></g></svg>
+                                </a>
+
                             </div>
                         </th>
                     </tr>
@@ -97,8 +111,11 @@ include "./templates/header.php";
                     <thead style="background-color: #286ea7">
                     <tr>
                         <th>
-                            <div class='list-group-item'>
-                                <h4>Disease</h4>
+                            <div class='list-group-item' style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                                <h4 style="margin: 0; color: white; text-align: center; ">Disease</h4>
+                                <a href="./browse_sample.php">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none"><path fill="#eab308" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" opacity=".16"/><path stroke="#eab308" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM15 10l-4 4m0-4l4 4"/></g></svg>
+                                </a>
 
                             </div>
                         </th>
@@ -110,6 +127,7 @@ include "./templates/header.php";
                 </table>
 
                 <!--Treatment-->
+                <!--
                 <table class='fenye table-bordered' id="Treatment_Type_" style="width: 100%;max-width: 100%; overflow-x: auto; table-layout: auto;">
                     <thead style="background-color: #286ea7">
                     <tr>
@@ -124,15 +142,18 @@ include "./templates/header.php";
                     <tbody>
 
                     </tbody>
-                </table>
+                </table>-->
 
                 <!--PLATFORM-->
                 <table class='fenye table-bordered' id="Platform_" style="width: 100%;max-width: 100%; overflow-x: auto; table-layout: auto;">
                     <thead style="background-color: #286ea7">
                     <tr>
                         <th>
-                            <div class='list-group-item'>
-                                <h4>Technology</h4>
+                            <div class='list-group-item' style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                                <h4 style="margin: 0; color: white; text-align: center; ">Technology</h4>
+                                <a href="./browse_dataset.php">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none"><path fill="#eab308" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" opacity=".16"/><path stroke="#eab308" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.92 5a2 2 0 0 0-1.519.698l-4.285 5a2 2 0 0 0 0 2.604l4.285 5A2 2 0 0 0 7.92 19H19a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM15 10l-4 4m0-4l4 4"/></g></svg>
+                                </a>
 
                             </div>
                         </th>
@@ -157,8 +178,8 @@ include "./templates/header.php";
             <hr>
             <!--表格开始-->
             <!--改------------------------------>
-            <table id="experiments" class="table table-hover table-bordered" style="width: 100%;max-width: 100%; overflow-x: auto; table-layout: auto;">
-                <thead>
+            <table id="experiments" class="table table-hover table-bordered" style="vertical-align: middle;width: 100%;max-width: 100%; overflow-x: auto; table-layout: auto;">
+                <thead style="vertical-align: middle;">
                 <tr>
                     <th>Dataset ID</th>
                     <th>Sample ID</th>
@@ -166,7 +187,7 @@ include "./templates/header.php";
                     <th>Tissue</th>
                     <th>Disease</th>
                     <th>Cell type</th>
-                    <th>Treatment</th>
+                    <!--<th>Treatment</th>-->
                     <th>Technology</th>
                 </tr>
                 </thead>
@@ -247,19 +268,51 @@ include "./templates/header.php";
 
                 // JSON 数据解析
                 const filter_data = JSON.parse(response);
+
+                // 过滤掉 'NA' key 的项
+                delete filter_data.CellType['NA'];
+                delete filter_data.Disease['NA'];
+                //delete filter_data.Treatment['NA'];
+
+
                 filter_dataset = filter_data.DatasetID;
+                filter_technology = filter_data.Technology;
                 filter_species = filter_data.Species;
                 filter_tissue = filter_data.Tissue;
                 filter_cell = filter_data.CellType;
                 filter_disease = filter_data.Disease;
-                filter_treatment = filter_data.Treatment;
-                filter_technology = filter_data.Technology;
+                //filter_treatment = filter_data.Treatment;
 
 
-                //调用函数来获取和flter筛选框中相同数据的下拉框HTML拼接输出
-                //generateSpeciesDropdown('species-dropdown' ,filter_species);
-                //generateTechnologyDropdown('technology-dropdown', filter_technology);
-                //generateTissueDropdown('tissue-dropdown', filter_tissue);
+
+
+                // 定义排序函数
+                function sortByValueDescending(data) {
+                    const entries = Object.entries(data);
+                    entries.sort((a, b) => b[1] - a[1]);
+                    return Object.fromEntries(entries);
+                }
+
+                // 自定义排序顺序
+                const customOrder = ["Homo sapiens", "Mus musculus", "Drosophila melanogaster", "Danio rerio", "Gallus gallus", "Caenorhabditis elegans"];
+
+                // 自定义排序函数
+                function sortByCustomOrder(data, order) {
+                    const entries = Object.entries(data);
+                    entries.sort((a, b) => order.indexOf(a[0]) - order.indexOf(b[0]));
+                    return Object.fromEntries(entries);
+                }
+
+                const sortedSpecies = sortByCustomOrder(filter_species, customOrder);
+
+                // 按数量降序排序
+                //const sortedSpecies = sortByValueDescending(filter_species);
+                const sortedTechnology = sortByValueDescending(filter_technology);
+                const sortedTissue = sortByValueDescending(filter_tissue);
+                const sortedCell = sortByValueDescending(filter_cell);
+                const sortedDisease = sortByValueDescending(filter_disease);
+                //const sortedTreatment = sortByValueDescending(filter_treatment);
+                const sortedDataset = sortByValueDescending(filter_dataset);
 
 
                 // 在控制台打印变量内容
@@ -268,25 +321,25 @@ include "./templates/header.php";
                 console.log('Tissue:', filter_tissue);
                 console.log('Cell type:', filter_cell);
                 console.log('Disease:', filter_disease);
-                console.log('Treatment:', filter_treatment);
+                //console.log('Treatment:', filter_treatment);
                 console.log('Technology:', filter_technology);
 
 
                 //格式化处理 filter 数据，调用的format系列函数，在下方定义
-                data_Dataset_Type_ = formatDatasetData(filter_dataset);
-                data_Species_ = formatSpeciesData(filter_species);
-                data_Tissue_Type_ = formatTissueData(filter_tissue);
-                data_Cell_Type_ = formatCellData(filter_cell);
-                data_Disease_Type_ = formatDiseaseData(filter_disease);
-                data_Treatment_Type_ = formatTreatmentData(filter_treatment);
-                data_Experiment_Type_ = formatTechnologyData(filter_technology);
+                data_Dataset_Type_ = formatDatasetData(sortedDataset);
+                data_Species_ = formatSpeciesData(sortedSpecies);
+                data_Tissue_Type_ = formatTissueData(sortedTissue);
+                data_Cell_Type_ = formatCellData(sortedCell);
+                data_Disease_Type_ = formatDiseaseData(sortedDisease);
+                //data_Treatment_Type_ = formatTreatmentData(sortedTreatment);
+                data_Experiment_Type_ = formatTechnologyData(sortedTechnology);
 
 
                 // 在调用formatSpeciesData之后，继续处理 data_Species_ 或者执行其他操作
                 //console.log(data_Species_);
 
                 // 在数据准备就绪后，初始化表格(顺序很重要！！！)
-                initDataTable(data_Dataset_Type_,data_Species_,data_Tissue_Type_,data_Cell_Type_,data_Disease_Type_,data_Treatment_Type_,data_Experiment_Type_);
+                initDataTable(data_Dataset_Type_,data_Species_,data_Tissue_Type_,data_Cell_Type_,data_Disease_Type_,data_Experiment_Type_);
 
             },
             error: function(xhr, status, error) {
@@ -295,7 +348,7 @@ include "./templates/header.php";
             }
         });
 
-        function initDataTable(dataset,species,tissue,cell,disease,treatment,experiment) {
+        function initDataTable(dataset,species,tissue,cell,disease,experiment) {
             // 使用 data 初始化 dataTable
             //console.log('Initializing DataTable with data:', data);
             // 在这里初始化您的dataTable，确保在data准备就绪的情况下进行
@@ -415,6 +468,7 @@ include "./templates/header.php";
                 }
             }
 
+            /*
             $('#Treatment_Type_').DataTable( {
                 "processing": true,
                 "paging": true,
@@ -437,11 +491,12 @@ include "./templates/header.php";
                     console.log('没有找到 ID 为  XXX  的按钮。');
                 }
             }
+            */
 
             $('#Platform_').DataTable( {
                 "processing": true,
                 "paging": true,
-                "pageLength": 4,
+                "pageLength": 10,
                 "info": false,
                 //"pagingType": 'simple_numbers',
                 "searching": false,
@@ -831,7 +886,7 @@ include "./templates/header.php";
         },
         dataType:'json',
         //order: [],
-        "order": [[ 2, "desc" ]],
+        "order": [[ 4, "desc" ]],
         dom: "<'top'lBf>rt<'bottom'ip>",
         buttons: [
             {
@@ -840,7 +895,7 @@ include "./templates/header.php";
             }
         ],
         lengthMenu: [[10, 25,35, 50, 100], [10, 25,35, 50, 100]],
-        pageLength: 35, // 设置默认显示50行
+        pageLength: 50, // 设置默认显示50行
         columns: [
             { data: 'DatasetID',
                 render: function ( data, type, row ) {
@@ -858,8 +913,16 @@ include "./templates/header.php";
             { data: 'Tissue' },
             { data: 'Disease' },
             { data: 'CellType' },
-            { data: 'Treatment' },
+            //{ data: 'Treatment' },
             { data: 'Technology' }
+        ],
+        "columnDefs": [
+            {
+                "targets": "_all",  // 对所有列应用样式
+                "createdCell": function (td, cellData, rowData, row, col) {
+                    $(td).css('text-align', 'center');  // 将单元格内容居中
+                }
+            }
         ]
     } );
 </script>

@@ -42,7 +42,7 @@ $map[] = ['Species', 'IN', $species_to_query];
 
 
 
-$result = Db::table('OverallSummary')->where($map)->field('Technology')->select();
+$result = Db::table('OverallSample')->where($map)->field('Technology')->select();
 
 // 从查询结果中提取 project_id 值
 $tech_ids = [];

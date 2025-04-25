@@ -7,13 +7,14 @@
 <!--<nav class="navbar navbar-expand-md navbar-dark bg-dark" data-bs-theme="dark">-->
 <nav class="navbar navbar-expand-md">
 
-    <div class="container">
-        <a class="navbar-brand d-flex justify-content-center col-lg-4" href="./index.php">eRNA scAtlas</a>
+    <div class="container"  style="width: 70%">
+        <a class="navbar-brand d-flex justify-content-center col-lg-2" style="margin-right: 90px" href="./index.php">sceRNAdb</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse col-lg-8" id="navbarsExample04">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0 col-lg-8">
+        <div class="collapse navbar-collapse col-lg-10" id="navbarsExample04">
+            <!--<ul class="navbar-nav me-auto mb-2 mb-md-0 col-lg-12">-->
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 col-lg-12 d-flex justify-content-between">
 
                 <li class="nav-item" style="margin-right: 30px" >
                     <a class="nav-link" href="./index.php" aria-expanded="false">HOME</a>
@@ -28,6 +29,13 @@
                     </ul>
                 </li>
 
+                <style>
+                    /* 鼠标悬停时显示下拉菜单 */
+                    .nav-item.dropdown:hover .dropdown-menu {
+                        display: block;
+                    }
+                </style>
+
                 <!-- navbar Search -->
                 <li class="nav-item" style="margin-right: 15px">
                     <a class="nav-link" href="./search_iframe.php" aria-expanded="false">SEARCH</a>
@@ -35,7 +43,7 @@
 
                 <!-- navbar Tools 下拉单 -->
                 <li class="nav-item" style="margin-right: 15px">
-                    <a class="nav-link" href="https://lcbb.swjtu.edu.cn/jbrowse2/" aria-expanded="false">Visualization</a>
+                    <a class="nav-link" href="https://lcbb.swjtu.edu.cn/jbrowse2/" aria-expanded="false">VISUALIZATION</a>
                 </li>
                 <!--
                 <li class="nav-item dropdown" style="margin-right: 12px">

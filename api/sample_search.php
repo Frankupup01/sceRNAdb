@@ -16,17 +16,17 @@ $select_sample = $_POST['select_sample'];
 //$select_sample = 'SRR1066622';
 
 $map = [];
-$map[] = ['Sample', '=', $select_sample];
+$map[] = ['SampleID', '=', $select_sample];
 
-$result = Db::table('sample_detail')->where($map)->
-field('Study')->
+$result = Db::table('OverallSample')->where($map)->
+field('DatasetID')->
 select();
 
 
 // 从查询结果中提取 project_id 值
 $project_ids = [];
 foreach ($result as $row) {
-    $project_ids[] = $row['Study'];  // 假设您的字段名是 project_id
+    $project_ids[] = $row['DatasetID'];  // 假设您的字段名是 project_id
 }
 
 // 去重处理

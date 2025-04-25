@@ -18,12 +18,10 @@ include "./base_iframe_test.php";
                             data-virtual-scroll="false">
                         <option value="Homo sapiens">Homo sapiens</option>
                         <option value="Mus musculus">Mus musculus</option>
-                        <!--
                         <option value="Gallus gallus">Gallus gallus</option>
                         <option value="Danio rerio">Danio rerio</option>
                         <option value="Caenorhabditis elegans">Caenorhabditis elegans</option>
                         <option value="Drosophila">Drosophila</option>
-                        -->
                     </select>
 
                     <!-- Tech List -->

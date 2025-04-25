@@ -2,6 +2,7 @@
 /* #1 针对表格的内部，表头地方进行样式设计 */
 #dataset_sample,
 #dataset_erna,
+#dataset_Serna,
 #marker_features,
 
 #experiments,
@@ -32,6 +33,7 @@
 
 #marker_features th,
 #dataset_erna th,
+#dataset_Serna th,
 #dataset_sample th,
 
 #experiments th,
@@ -57,6 +59,7 @@
 
 #marker_features td,
 #dataset_erna td,
+#dataset_Serna td,
 #dataset_sample td,
 
 #experiments td,
@@ -86,6 +89,7 @@
 /* 表头样式 */
 #marker_features thead th,
 #dataset_erna thead th,
+#dataset_Serna thead th,
 #dataset_sample thead th,
 
 #experiments thead th,
@@ -143,6 +147,7 @@
 /* #2 针对表格的按钮等部件进行样式设计 */
 #marker_features_wrapper .dataTables_paginate,
 #dataset_erna_wrapper .dataTables_paginate,
+#dataset_Serna_wrapper .dataTables_paginate,
 #dataset_sample_wrapper .dataTables_paginate,
 
 #experiments_wrapper .dataTables_paginate,
@@ -178,6 +183,7 @@
 
 #marker_features_wrapper .dataTables_paginate .paginate_button,
 #dataset_erna_wrapper .dataTables_paginate .paginate_button,
+#dataset_Serna_wrapper .dataTables_paginate .paginate_button,
 #dataset_sample_wrapper .dataTables_paginate .paginate_button,
 
 #experiments_wrapper .dataTables_paginate .paginate_button,
@@ -206,6 +212,7 @@
 
 #marker_features_wrapper .dataTables_paginate .paginate_button.current,
 #dataset_erna_wrapper .dataTables_paginate .paginate_button.current,
+#dataset_Serna_wrapper .dataTables_paginate .paginate_button.current,
 #dataset_sample_wrapper .dataTables_paginate .paginate_button.current,
 
 #experiments_wrapper .dataTables_paginate .paginate_button.current,
@@ -236,6 +243,7 @@
 
 #marker_features_wrapper .dataTables_info,
 #dataset_erna_wrapper .dataTables_info,
+#dataset_Serna_wrapper .dataTables_info,
 #dataset_sample_wrapper .dataTables_info,
 
 #experiments_wrapper .dataTables_info,
@@ -270,6 +278,7 @@
 
 #marker_features_wrapper .dataTables_length,
 #dataset_erna_wrapper .dataTables_length,
+#dataset_Serna_wrapper .dataTables_length,
 #dataset_sample_wrapper .dataTables_length,
 
 #experiments_wrapper .dataTables_length,
@@ -297,6 +306,7 @@
 
 #marker_features_wrapper .dt-buttons .buttons-csv,
 #dataset_erna_wrapper .dt-buttons .buttons-csv,
+#dataset_Serna_wrapper .dt-buttons .buttons-csv,
 #dataset_sample_wrapper .dt-buttons .buttons-csv,
 
 #experiments_wrapper .dt-buttons .buttons-csv,
@@ -329,6 +339,7 @@
 
 #marker_features_wrapper .top,
 #dataset_erna_wrapper .top,
+#dataset_Serna_wrapper .top,
 #dataset_sample_wrapper .top,
 
 #experiments_wrapper .top,
@@ -408,6 +419,7 @@
 
 /* 4. 超链接内容取消下划线 */
 #dataset_erna tbody a,
+#dataset_Serna tbody a,
 
 #experiments tbody a,
 #region_erna tbody a,

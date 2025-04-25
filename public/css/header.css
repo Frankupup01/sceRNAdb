@@ -26,7 +26,8 @@ nav{
 }
 
 .dropdown-item:hover{
-    color: #ffffff; /* color: #ffc107;*/
-    background-color: #2e303f; /*background-color: #0f5132;*/
+    color: #ffc107; /* color: #ffc107;*/
+    background-color: #286ea7;
+    /*background-color: #2e303f; /*background-color: #0f5132;*/
 }
 

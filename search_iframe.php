@@ -42,7 +42,7 @@ include "./templates/header.php";
             var bHeight = iframe.contentWindow.document.body.scrollHeight;
             var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
             var height = Math.max(bHeight, dHeight);
-            height = Math.min(height, 420); // 设置最大高度限制
+            height = Math.min(height, 800); // 设置最大高度限制
             iframe.height = height;
 // console.log(height);
         }catch (ex){}
@@ -193,7 +193,7 @@ include "./templates/header.php";
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <iframe src="./templates/iframe/iframe_sample.php" frameborder="no" height="400px" width='100%' ></iframe>
+                            <iframe src="./templates/iframe/iframe_sample.php" frameborder="no" height="450px" width='100%' ></iframe>
                         </div>
                     </div>
                 </div>
