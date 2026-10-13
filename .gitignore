@@ -1,1 +1,7 @@
-/bootstrap-3.4.1-dist/
+vendor/
+.DS_Store
+public/
+json/
+db/
+echarts-5.5.0/
+bootstrap5/

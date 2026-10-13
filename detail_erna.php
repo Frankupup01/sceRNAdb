@@ -55,6 +55,24 @@ include "./templates/base.php";
         border-radius: 0 0 5px 5px;   /* 下圆角 0 0 5px 5px;  */
         background-color: #fff;       /* 内容背景色 */
     }
+    /* 页面整体最小高度 100% */
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 主内容区域，占据剩余空间 */
+    #mainContain,
+    .container {
+        flex: 1 0 auto;
+    }
+
+    /* footer 永远贴底 */
+    footer, .footer {
+        margin-top: auto;
+    }
 </style>
 
 <body id="body">
@@ -173,17 +191,6 @@ include "./templates/header.php";
                         </a>
                     </li>
 
-                    <li role="presentation" class="nav-item" id="tab_meth">
-                        <a href="#meth" aria-controls="meth" role="tab" data-toggle="tab">
-                            <abbr style="text-decoration: none;cursor: inherit;border-bottom: none;">DNA Methylation</abbr>
-                        </a>
-                    </li>
-
-                    <li role="presentation" class="nav-item" id="tab_atac">
-                        <a href="#atac" aria-controls="meth" role="tab" data-toggle="tab">
-                            <abbr style="text-decoration: none;cursor: inherit;border-bottom: none;">Chromatin Accessibility Region</abbr>
-                        </a>
-                    </li>
 
                     <li role="presentation" class="nav-item" id="tab_tfbs">
                         <a href="#tfbs" aria-controls="tfbs" role="tab" data-toggle="tab">
@@ -196,6 +203,14 @@ include "./templates/header.php";
                             <abbr style="text-decoration: none;cursor: inherit;border-bottom: none;">RBP</abbr>
                         </a>
                     </li>
+
+                    <li role="presentation" class="nav-item" id="tab_eei">
+                        <a href="#eei" aria-controls="eei" role="tab" data-toggle="tab">
+                            <abbr style="text-decoration: none;cursor: inherit;border-bottom: none;">EEI</abbr>
+                        </a>
+                    </li>
+
+
                 </ul>
 
 
@@ -207,7 +222,7 @@ include "./templates/header.php";
                 </div>
 
 
-                <!-- Risk SNP Tab 内容 -->
+                <!-- common SNP Tab 内容 -->
                 <div class="tab-pane" id="CommonSNP">
                     <!--
                     <p class="h4 text-justify font-weight-300 dashed" style="color:black">
@@ -542,6 +557,37 @@ include "./templates/header.php";
                 </div>
 
 
+                <!-- RBP Tab 内容 -->
+                <div class="tab-pane" id="eei">
+                    <!--
+                    <p class="h4 text-justify font-weight-300 dashed" style="color:black">
+                        <strong>SNP sites on <font color="red" id="note2">enh1</font></strong>
+                    </p>
+                    -->
+                    <table id="table-eei" class="table table-striped table-bordered" style="width: 100%;max-width: 100%; overflow-x: auto; table-layout: auto;">
+                        <thead>
+                        <tr>
+                            <th style="text-align:center">Enhancer1 Region</th>
+                            <th style="text-align:center">Chrom1</th>
+                            <th style="text-align:center">Start1</th>
+                            <th style="text-align:center">End1</th>
+                            <th style="text-align:center">Enhancer1 Length</th>
+                            <th style="text-align:center">Enhancer2 Region</th>
+                            <th style="text-align:center">Chrom2</th>
+                            <th style="text-align:center">Start2</th>
+                            <th style="text-align:center">End2</th>
+                            <th style="text-align:center">Enhancer2 Length</th>
+                            <th style="text-align:center">Cell Line</th>
+                            <th style="text-align:center">Source</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- 数据由 DataTable 动态加载 -->
+                        </tbody>
+                    </table>
+                </div>
+
+
             </div>
         </div>
         </div>
@@ -619,7 +665,7 @@ include "./templates/header.php";
 
 <script type="text/javascript" charset="UTF-8">
     $(document).ready(function () {
-        var commonsnpTable, risksnpTable, geneTable, cas9Table,rnainteractionTable, repeatTable, aluTable, caQTLTable, eQTLTable, haQTLTable, m5cTable, m6aTable, tfbsTable, rbpTable;
+        var commonsnpTable, risksnpTable, geneTable, cas9Table,rnainteractionTable, repeatTable, aluTable, caQTLTable, eQTLTable, haQTLTable, m5cTable, m6aTable, tfbsTable, rbpTable, eeiTable;
 
         // 切换到 SNP 标签时初始化表格
         $('#tab_commonsnp').click(function() {
@@ -686,6 +732,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
         // 切换到 Risk SNP 标签时初始化表格
@@ -753,6 +800,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
         //Gene
@@ -867,6 +915,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
 
@@ -935,6 +984,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
         // 切换到 RNA interaction 标签时初始化表格
@@ -1003,6 +1053,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
 
@@ -1071,6 +1122,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
         // 切换到 Repeat (Alu)标签时初始化表格
@@ -1138,6 +1190,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
         // 切换到 caQTL标签时初始化表格
@@ -1211,6 +1264,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
         // 切换到 eQTL标签时初始化表格
@@ -1277,6 +1331,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
         // 切换到 haQTL标签时初始化表格
@@ -1343,6 +1398,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
         // 切换到 m5c标签时初始化表格
@@ -1409,6 +1465,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
         // 切换到 m6a标签时初始化表格
@@ -1475,6 +1532,7 @@ include "./templates/header.php";
             $('#m6a').show();
             $('#tfbs').hide();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
         // 切换到 TFBS标签时初始化表格
@@ -1540,6 +1598,7 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').show();
             $('#rbp').hide();
+            $('#eei').hide();
         });
 
         // 切换到 RBP标签时初始化表格
@@ -1597,6 +1656,69 @@ include "./templates/header.php";
             $('#m6a').hide();
             $('#tfbs').hide();
             $('#rbp').show();
+            $('#eei').hide();
+        });
+
+        // 切换到 EEI标签时初始化表格
+        $('#tab_eei').click(function() {
+
+            $('.nav-item').removeClass('active'); // 移除所有选项卡的 active 类
+            $(this).addClass('active'); // 为当前点击的选项卡添加 active 类
+            // 如果表格还没有初始化，才进行初始化
+            if (!eeiTable) {
+                eeiTable = $('#table-eei').DataTable({
+                    processing: true,
+                    serverSide: true,
+                    serverMethod: 'post',ajax: {url: './api/detail_EEI.php',
+                        type: 'post',
+                        dataType: 'json',
+                        async: true,
+                        data: function(d) {
+                            d.select_pos = select_pos;
+                        },
+                    },
+                    dom: "<'top'lBf>rt<'bottom'ip>",buttons: [{'extend': 'csv','text': 'Download',}],
+                    columns: [
+                        { data: 'enhancer1_region' },
+                        { data: 'enhancer1_chrom' },
+                        { data: 'enhancer1_start' },
+                        { data: 'enhancer1_end' },
+                        { data: 'enhancer1_length' },
+                        { data: 'enhancer2_region' },
+                        { data: 'enhancer2_chrom' },
+                        { data: 'enhancer2_start' },
+                        { data: 'enhancer2_end' },
+                        { data: 'enhancer2_length' },
+                        { data: 'cell_line' },
+                        { data: 'source' },
+
+                    ],drawCallback: function(settings) {
+                        var api = this.api();
+                        if (api.data().length === 0) {$('#no-data-message').show();  // 如果没有数据，显示提示消息
+                        } else {
+                            $('#no-data-message').hide();  // 有数据时隐藏提示消息
+                        }
+                    }
+                });
+            } else {
+                eeiTable.ajax.reload();  // 如果已经初始化，则重新加载数据
+            }
+
+            $('#CommonSNP').hide();
+            $('#RiskSNP').hide();
+            $('#Gene').hide();
+            $('#cas9').hide();
+            $('#rnainteraction').hide();
+            $('#repeat').hide();
+            $('#alu').hide();
+            $('#caQTL').hide();
+            $('#eQTL').hide();
+            $('#haQTL').hide();
+            $('#m5c').hide();
+            $('#m6a').hide();
+            $('#tfbs').hide();
+            $('#rbp').hide();
+            $('#eei').show();
         });
 
 

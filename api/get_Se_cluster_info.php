@@ -11,7 +11,7 @@ $sid = $_POST['sid'];
 
 
 
-$result = Db::table('cluster_mm10')->where([
+$result = Db::table('cluster_se')->where([
     ['Dataset','=',$sid],
     //['Dataset','=','GSE83139'],
 ])->field('Cluster, Cell, SeRNA')->select();

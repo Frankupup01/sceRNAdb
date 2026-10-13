@@ -1,0 +1,1370 @@
+[
+    {
+        "id": 1,
+        "project_id": "E-MTAB-2600",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "embryonic stem cell",
+        "title": "Characterizing noise structure in single-cell RNA-seq distinguishes genuine from technical stochastic allelic expression"
+    },
+    {
+        "id": 2,
+        "project_id": "E-MTAB-3321",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Embryo",
+        "title": "Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in Four-Cell Mouse Embryos"
+    },
+    {
+        "id": 3,
+        "project_id": "E-MTAB-3707",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Liver",
+        "title": "Computational assignment of cell-cycle stage from single-cell transcriptome data"
+    },
+    {
+        "id": 4,
+        "project_id": "E-MTAB-4026",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Embryo",
+        "title": "Single-cell RNA sequencing of mouse embryos with Tal1 (Scl) knockout"
+    },
+    {
+        "id": 5,
+        "project_id": "E-MTAB-4079",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Embryo",
+        "title": "RNA-seq of coding RNA from single cells derived from mouse embryos"
+    },
+    {
+        "id": 6,
+        "project_id": "E-MTAB-4388",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "CD4+ T cell",
+        "title": "Single-cell RNA-seq and computational analysis using temporal mixture modeling resolves TH1/TFH fate bifurcation in malaria."
+    },
+    {
+        "id": 7,
+        "project_id": "E-MTAB-4619",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "CD4+ T cell",
+        "title": "Single-cell analysis of CD4+ T-cell differentiation reveals three major cell states and progressive acceleration of proliferation."
+    },
+    {
+        "id": 8,
+        "project_id": "E-MTAB-4825",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "IgE B cell",
+        "title": "Intrinsic transcriptional heterogeneity in B cells controls early class switching to IgE"
+    },
+    {
+        "id": 9,
+        "project_id": "E-MTAB-4888",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "CD4+ T cell",
+        "title": "Aging increases cell-to-cell transcriptional variability upon immune stimulation"
+    },
+    {
+        "id": 10,
+        "project_id": "E-MTAB-5481",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "embryonic stem cell",
+        "title": "Single cell RNA-sequencing of Spike-ins and mESC using Smart-seq2 on 96-well plates"
+    },
+    {
+        "id": 11,
+        "project_id": "E-MTAB-5483",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "embryonic stem cell",
+        "title": "Single cell RNA-sequencing of Spike-ins and mESC using SMARTer on C1 System"
+    },
+    {
+        "id": 12,
+        "project_id": "E-MTAB-5485",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "embryonic stem cell",
+        "title": "Single cell RNA-sequencing of Spike-ins and mESC using Smart-seq2 on C1 System"
+    },
+    {
+        "id": 13,
+        "project_id": "E-MTAB-5522",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "embryonic stem cell",
+        "title": "Assessing the reliability of spike-in normalization for analyses of single-cell RNA sequencing data"
+    },
+    {
+        "id": 14,
+        "project_id": "E-MTAB-6859",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Mammary",
+        "title": "RNA-seq of mid-gestation mouse mammary tissues from E12.5 stage organs"
+    },
+    {
+        "id": 15,
+        "project_id": "E-MTAB-6987",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Bone marrow",
+        "title": "Single-cell transcriptomics identifies CD44 as a new marker and regulator of haematopoietic stem cells development"
+    },
+    {
+        "id": 16,
+        "project_id": "E-MTAB-7098",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "embryonic stem cell",
+        "title": "Genomic encoding of transcriptional burst kinetics"
+    },
+    {
+        "id": 17,
+        "project_id": "E-MTAB-7178",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "gamma-delta T cell",
+        "title": "RNA sequencing of gamma-delta T cell subsets from young and old mice"
+    },
+    {
+        "id": 18,
+        "project_id": "E-MTAB-7239",
+        "species": "Mouse",
+        "technology": "SMARTer & Smart-seq2",
+        "tissue": "embryonic stem cell",
+        "title": "Multi-platform single cell transcriptomic profiling as a benchmarking resource"
+    },
+    {
+        "id": 19,
+        "project_id": "E-MTAB-7901",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "embryonic stem cell",
+        "title": "Distinct Molecular Trajectories Converge to Induce Naive Pluripotency"
+    },
+    {
+        "id": 20,
+        "project_id": "ERP010829",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Bone marrow",
+        "title": "Developmental_and_molecular_heterogeneity_of_mouse_hematopoietic_stem_cells"
+    },
+    {
+        "id": 21,
+        "project_id": "ERP011804",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Bone marrow",
+        "title": "Transcriptional_regulatory_network_during_ILC2_commitment"
+    },
+    {
+        "id": 22,
+        "project_id": "GSE100597",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Embryo",
+        "title": "Single-Cell Landscape of Transcriptional Heterogeneity and Cell Fate Decisions During Mouse Early Gastrulation"
+    },
+    {
+        "id": 23,
+        "project_id": "GSE101487",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Brain",
+        "title": "Thirst-associated preoptic neurons encode an aversive motivational drive"
+    },
+    {
+        "id": 24,
+        "project_id": "GSE101712",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Bone marrow",
+        "title": "Mbd3/NuRD controls lymphoid cell fate and inhibits tumorigenesis by repressing a B cell transcriptional program"
+    },
+    {
+        "id": 25,
+        "project_id": "GSE106663",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Spleen",
+        "title": "The BLUEPRINT Murine Lymphocyte Epigenome Reference Resource"
+    },
+    {
+        "id": 26,
+        "project_id": "GSE107632",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Brain",
+        "title": "Variation in Activity State, Axonal Projection, and Position Define the Transcriptional Identity of Individual Neocortical Projection Neurons"
+    },
+    {
+        "id": 27,
+        "project_id": "GSE108020",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Brain",
+        "title": "Single-Cell RNA-Seq of Mouse Dopaminergic Neurons Informs Candidate Gene Selection for Sporadic Parkinson Disease"
+    },
+    {
+        "id": 28,
+        "project_id": "GSE109444",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Lung",
+        "title": "Single-cell Wnt signaling niches maintain stemness of alveolar type 2 cells."
+    },
+    {
+        "id": 29,
+        "project_id": "GSE109556",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Transcriptional Dysregulation in Postnatal Glutamatergic Progenitors Contributes to Closure of the Cortical Neurogenic Period"
+    },
+    {
+        "id": 30,
+        "project_id": "GSE109774",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "20 Tissues",
+        "title": "Single-cell transcriptomics of 20 mouse organs creates a Tabula Muris"
+    },
+    {
+        "id": 31,
+        "project_id": "GSE109796",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Early emergence of cortical interneuron diversity in the mouse embryo"
+    },
+    {
+        "id": 32,
+        "project_id": "GSE110371",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Mammary",
+        "title": "Single-cell RNA-Seq reveals cell heterogeneity and hierarchy within mouse mammary epithelia."
+    },
+    {
+        "id": 33,
+        "project_id": "GSE112177",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "A Guide to Single-Cell Transcriptomics in Adult Rodent Brain: The Medium Spiny Neuron Transcriptome Revisited."
+    },
+    {
+        "id": 34,
+        "project_id": "GSE115070",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Combinatorial Expression of Grp and Neurod6 Defines Dopamine Neuron Populations with Distinct Projection Patterns and Disease Vulnerability."
+    },
+    {
+        "id": 35,
+        "project_id": "GSE115622",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Brain",
+        "title": "Quiescence Modulates Stem Cell Maintenance and Regenerative Capacity in the Aging Brain"
+    },
+    {
+        "id": 36,
+        "project_id": "GSE115746",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Shared and distinct transcriptomic cell types across neocortical areas"
+    },
+    {
+        "id": 37,
+        "project_id": "GSE116138",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Brain",
+        "title": "Single-cell RNA sequencing reveals midbrain dopamine neuron diversity emerging during mouse brain development."
+    },
+    {
+        "id": 38,
+        "project_id": "GSE117963",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Skeletal Muscle",
+        "title": "Disease-relevant transcriptional signatures identified in individual smooth muscle cells from healthy mouse vessels"
+    },
+    {
+        "id": 39,
+        "project_id": "GSE118614",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Eye",
+        "title": "Single-Cell RNA-Seq Analysis of Retinal Development Identifies NFI Factors as Regulating Mitotic Exit and Late-Born Cell Specification"
+    },
+    {
+        "id": 40,
+        "project_id": "GSE118953",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Temporal patterning of apical progenitors and their daughter neurons in the developing neocortex."
+    },
+    {
+        "id": 41,
+        "project_id": "GSE119766",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Embryo",
+        "title": "Dissecting Cell Lineage Specification and Sex Fate Determination in Gonadal Somatic Cells Using Single-Cell Transcriptomics."
+    },
+    {
+        "id": 42,
+        "project_id": "GSE121653",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Single-Cell RNA-Seq Reveals Developmental Origins and Ontogenetic Stability of Neurexin Alternative Splicing Profiles"
+    },
+    {
+        "id": 43,
+        "project_id": "GSE125691",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Lung",
+        "title": "Two distinct interstitial macrophage populations coexist across tissues in specific subtissular niches"
+    },
+    {
+        "id": 44,
+        "project_id": "GSE127893",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Brain",
+        "title": "The Major Risk Factors for Alzheimer's Disease: Age, Sex, and Genes Modulate the Microglia Response to A\u03b2 Plaques"
+    },
+    {
+        "id": 45,
+        "project_id": "GSE131038",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Bone marrow",
+        "title": "Polychromic Reporter Mice Reveal Unappreciated Innate Lymphoid Cell Progenitor Heterogeneity and Elusive ILC3 Progenitors in Bone Marrow."
+    },
+    {
+        "id": 46,
+        "project_id": "GSE131935",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "CD4+ T cell",
+        "title": "Single-Cell RNA Sequencing of the T Helper Cell Response to House Dust Mites Defines a Distinct Gene Expression Signature in Airway Th2 Cells"
+    },
+    {
+        "id": 47,
+        "project_id": "GSE132044",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Unknown",
+        "title": "Systematic comparison of single-cell and single-nucleus RNA-sequencing methods"
+    },
+    {
+        "id": 48,
+        "project_id": "GSE135703",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Ear",
+        "title": "Characterizing Adult Cochlear Supporting Cell Transcriptional Diversity Using Single-Cell RNA-Seq: Validation in the Adult Mouse and Translational Implications for the Adult Human Cochlea"
+    },
+    {
+        "id": 49,
+        "project_id": "GSE22182",
+        "species": "Mouse",
+        "technology": "Tang",
+        "tissue": "Embryo",
+        "title": "Deterministic and stochastic allele specific gene expression in single mouse blastomeres"
+    },
+    {
+        "id": 50,
+        "project_id": "GSE41265",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Bone Marrow",
+        "title": "Single-cell transcriptomics reveals bimodality in expression and splicing in immune cells."
+    },
+    {
+        "id": 51,
+        "project_id": "GSE42268",
+        "species": "Mouse",
+        "technology": "Quartz-Seq &Smart-seq",
+        "tissue": "embryonic stem cell",
+        "title": "Quartz-Seq: a highly reproducible and sensitive single-cell RNA sequencing method, reveals non-genetic gene-expression heterogeneity"
+    },
+    {
+        "id": 52,
+        "project_id": "GSE45719",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Embryo",
+        "title": "Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells."
+    },
+    {
+        "id": 53,
+        "project_id": "GSE47835",
+        "species": "Mouse",
+        "technology": "Tang",
+        "tissue": "embryonic stem cell",
+        "title": "Microfluidic single-cell whole-transcriptome sequencing"
+    },
+    {
+        "id": 54,
+        "project_id": "GSE48968",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Bone marrow",
+        "title": "Single-cell RNA-seq reveals dynamic paracrine control of cellular variation"
+    },
+    {
+        "id": 55,
+        "project_id": "GSE49321",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "embryonic fibroblast",
+        "title": "Smart-seq2 for sensitive full-length transcriptome profiling in single cells"
+    },
+    {
+        "id": 56,
+        "project_id": "GSE51372",
+        "species": "Mouse",
+        "technology": "Tang",
+        "tissue": "Pancreas",
+        "title": "Single-cell RNA sequencing identifies extracellular matrix gene expression by pancreatic circulating tumor cells"
+    },
+    {
+        "id": 57,
+        "project_id": "GSE52583",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Lung",
+        "title": "Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq."
+    },
+    {
+        "id": 58,
+        "project_id": "GSE55291",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "iPS cell",
+        "title": "Single-cell transcriptome analysis reveals dynamic changes in lncRNA expression during reprogramming."
+    },
+    {
+        "id": 59,
+        "project_id": "GSE57249",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Embryo",
+        "title": "Cell fate inclination within 2-cell and 4-cell mouse embryos revealed by single-cell RNA sequencing"
+    },
+    {
+        "id": 60,
+        "project_id": "GSE59130",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Kidney",
+        "title": "Single cell dissection of early kidney development: multilineage priming"
+    },
+    {
+        "id": 61,
+        "project_id": "GSE60297",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Thymus",
+        "title": "Population and single-cell genomics reveal the Aire dependency, relief from Polycomb silencing, and distribution of self-antigen expression in thymic epithelia."
+    },
+    {
+        "id": 62,
+        "project_id": "GSE60781",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Bone marrow",
+        "title": "Identification of cDC1- and cDC2-committed DC progenitors reveals early lineage priming at the common DC progenitor stage in the bone marrow."
+    },
+    {
+        "id": 63,
+        "project_id": "GSE61533",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Bone marrow",
+        "title": "Combined Single-Cell Functional and Gene Expression Analysis Resolves Heterogeneity within Stem Cell Populations"
+    },
+    {
+        "id": 64,
+        "project_id": "GSE63576",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Dorsal root ganglion",
+        "title": "Somatosensory neuron types identified by high-coverage single-cell RNA-sequencing and functional heterogeneity."
+    },
+    {
+        "id": 65,
+        "project_id": "GSE66202",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Kidney",
+        "title": "Intrinsic Age-Dependent Changes and Cell-Cell Contacts Regulate Nephron Progenitor Lifespan."
+    },
+    {
+        "id": 66,
+        "project_id": "GSE67120",
+        "species": "Mouse",
+        "technology": "Tang",
+        "tissue": "Bone marrow",
+        "title": "Tracing haematopoietic stem cell formation at single-cell resolution."
+    },
+    {
+        "id": 67,
+        "project_id": "GSE67310",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Heart",
+        "title": "Dissecting direct reprogramming from fibroblast to neuron using single-cell RNA-seq"
+    },
+    {
+        "id": 68,
+        "project_id": "GSE67833",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Brain",
+        "title": "Single-Cell Transcriptomics Reveals a Population of Dormant Neural Stem Cells that Become Activated upon Brain Injury."
+    },
+    {
+        "id": 69,
+        "project_id": "GSE68981",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Bone marrow",
+        "title": "Single cell transcriptomics reveals unanticipated features of early hematopoietic precursors."
+    },
+    {
+        "id": 70,
+        "project_id": "GSE70236",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Bone marrow",
+        "title": "Single-cell analysis of mixed-lineage states leading to a binary cell fate choice"
+    },
+    {
+        "id": 71,
+        "project_id": "GSE70657",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Bone marrow",
+        "title": "Single-cell RNA sequencing reveals molecular and functional platelet bias of aged haematopoietic stem cells."
+    },
+    {
+        "id": 72,
+        "project_id": "GSE71485",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Single-Cell RNA-Seq with Waterfall Reveals Molecular Cascades underlying Adult Neurogenesis."
+    },
+    {
+        "id": 73,
+        "project_id": "GSE71585",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Adult mouse cortical cell taxonomy revealed by single cell transcriptomics"
+    },
+    {
+        "id": 74,
+        "project_id": "GSE74406",
+        "species": "Mouse",
+        "technology": "Tang",
+        "tissue": "Placenta",
+        "title": "Single-cell RNA-seq reveals cell type-specific transcriptional signatures at the maternal-foetal interface during pregnancy."
+    },
+    {
+        "id": 75,
+        "project_id": "GSE74596",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Thymus",
+        "title": "Innate-like functions of natural killer T cell subsets result from highly divergent gene programs"
+    },
+    {
+        "id": 76,
+        "project_id": "GSE75804",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "embryonic stem cell",
+        "title": "Serum-Based Culture Conditions Provoke Gene Expression Variability in Mouse Embryonic Stem Cells as Revealed by Single-Cell Analysis."
+    },
+    {
+        "id": 77,
+        "project_id": "GSE76005",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Characterizing transcriptional heterogeneity through pathway and gene set overdispersion analysis"
+    },
+    {
+        "id": 78,
+        "project_id": "GSE76118",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Heart",
+        "title": "Transcriptomic profiling maps anatomically patterned subpopulations among single embryonic cardiac cells"
+    },
+    {
+        "id": 79,
+        "project_id": "GSE76157",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Tibia growth plate",
+        "title": "Systematic Reconstruction of Molecular Cascades Regulating GP Development Using Single-Cell RNA-Seq"
+    },
+    {
+        "id": 80,
+        "project_id": "GSE76483",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Dorsal root ganglion",
+        "title": "Simultaneous profiling of transcriptome and DNA methylome from a single cell"
+    },
+    {
+        "id": 81,
+        "project_id": "GSE77740",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Lymph Node",
+        "title": "Progressive alterations in multipotent hematopoietic progenitors underlie lymphoid cell loss in aging."
+    },
+    {
+        "id": 82,
+        "project_id": "GSE77980",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Pancreas",
+        "title": "Use of the Fluidigm C1 platform for RNA sequencing of single mouse pancreatic islet cells"
+    },
+    {
+        "id": 83,
+        "project_id": "GSE78510",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Pancreas",
+        "title": "Single cell transcriptomic profiling of mouse pancreatic progenitors"
+    },
+    {
+        "id": 84,
+        "project_id": "GSE79096",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "germinal center B cell",
+        "title": "Visualizing germinal center B cell dynamics at single cell transcriptome resolution"
+    },
+    {
+        "id": 85,
+        "project_id": "GSE79306",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Brain",
+        "title": "\tGene expression profiles of brain endothelial cells during embryonic development at bulk and single-cell levels"
+    },
+    {
+        "id": 86,
+        "project_id": "GSE80032",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Pancreas",
+        "title": "Single-Cell Analysis Uncovers Clonal Acinar Cell Heterogeneity in the Adult Pancreas"
+    },
+    {
+        "id": 87,
+        "project_id": "GSE80232",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Retinal organoid",
+        "title": "Comprehensive Classification of Retinal Bipolar Neurons by Single-Cell Transcriptomics. "
+    },
+    {
+        "id": 88,
+        "project_id": "GSE81530",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Lymph Node",
+        "title": "Development and differentiation of early innate lymphoid progenitors"
+    },
+    {
+        "id": 89,
+        "project_id": "GSE81682",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Bone marrow\u00a0",
+        "title": "A single-cell resolution map of mouse hematopoietic stem and progenitor cell differentiation"
+    },
+    {
+        "id": 90,
+        "project_id": "GSE82187",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Cellular Taxonomy of the Mouse Striatum as Revealed by Single-Cell RNA-Seq"
+    },
+    {
+        "id": 91,
+        "project_id": "GSE87069",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Brain",
+        "title": "Single-Cell Analysis Reveals a Close Relationship between Differentiating Dopamine and Subthalamic Nucleus Neuronal Lineages"
+    },
+    {
+        "id": 92,
+        "project_id": "GSE87293",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Lymph Node",
+        "title": "Molecular architecture underlying fluid absorption by the developing inner ear"
+    },
+    {
+        "id": 93,
+        "project_id": "GSE87375",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Pancreas",
+        "title": "Deciphering Pancreatic Islet B Cell and a Cell "
+    },
+    {
+        "id": 94,
+        "project_id": "GSE87631",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Bone marrow\u00a0",
+        "title": "Proliferation Drives Aging-Related Functional Decline in a Subpopulation of the Hematopoietic Stem Cell Compartment."
+    },
+    {
+        "id": 95,
+        "project_id": "GSE87795",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Liver",
+        "title": "Single-cell transcriptome analysis of mouse fetal livers from different developmental stages"
+    },
+    {
+        "id": 96,
+        "project_id": "GSE89811",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Bone marrow\u00a0",
+        "title": "Differential cytokine contributions of perivascular haematopoietic stem cell niches."
+    },
+    {
+        "id": 97,
+        "project_id": "GSE90047",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Liver",
+        "title": "A single-cell transcriptomic analysis reveals precise pathways and regulatory mechanisms underlying hepatoblast differentiation"
+    },
+    {
+        "id": 98,
+        "project_id": "GSE90809",
+        "species": "Mouse",
+        "technology": "Tang",
+        "tissue": "Brain",
+        "title": "A neural basis for melanocortin-4 receptor-regulated appetite"
+    },
+    {
+        "id": 99,
+        "project_id": "GSE90848",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Skin",
+        "title": "Epithelial-Mesenchymal Micro-niches Govern Stem Cell Lineage Choices"
+    },
+    {
+        "id": 100,
+        "project_id": "GSE90856",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Small Intestinal",
+        "title": "Mex3a Marks a Slowly Dividing Subpopulation of Lgr5+ Intestinal Stem Cells"
+    },
+    {
+        "id": 101,
+        "project_id": "GSE92707",
+        "species": "Mouse",
+        "technology": "Smart-seq",
+        "tissue": "Brain",
+        "title": "Heterogeneity of hypothalamic pro-opiomelanocortin-expressing neurons revealed by single-cell RNA sequencing"
+    },
+    {
+        "id": 102,
+        "project_id": "GSE98664",
+        "species": "Mouse",
+        "technology": "RamDA-seq  & Smart-seq",
+        "tissue": "embryonic stem cell",
+        "title": "Single-cell full-length total RNA sequencing uncovers dynamics of recursive splicing and enhancer RNAs"
+    },
+    {
+        "id": 103,
+        "project_id": "GSE98816",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Brain",
+        "title": "Single-cell RNA sequencing of mouse brain and lung vascular and vessel-associated cell types"
+    },
+    {
+        "id": 104,
+        "project_id": "PRJNA524391",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Testis",
+        "title": "Mouse neonatal male germ cell expression profiles"
+    },
+    {
+        "id": 105,
+        "project_id": "PRJNA66167",
+        "species": "Mouse",
+        "technology": "SMARTer & Smart-seq2",
+        "tissue": "Brain,skeletal muscle,Heart,Liver,Thymus",
+        "title": "RNA-seq from ENCODE/Caltech (Mouse)"
+    },
+    {
+        "id": 106,
+        "project_id": "SRP049944",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Heart",
+        "title": "Single cardiomyocyte nuclear transcriptomes reveal a lincRNA-regulated de-differentiation and cell cycle stress-response in vivo"
+    },
+    {
+        "id": 107,
+        "project_id": "SRP065920",
+        "species": "Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "olfactory sensory neurons",
+        "title": "Single-cell RNA sequencing of single olfactory sensory neurons from mice"
+    },
+    {
+        "id": 108,
+        "project_id": "E-MTAB-3346/E-MTAB-3624",
+        "species": "Human/Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Thymus",
+        "title": "Single-cell transcriptome analysis reveals coordinated ectopic gene-expression patterns in medullary thymic epithelial cells"
+    },
+    {
+        "id": 109,
+        "project_id": "GSE38495",
+        "species": "Human/Mouse",
+        "technology": "Smart-seq",
+        "tissue": "Unknown",
+        "title": "Full-length mRNA-Seq from single-cell levels of RNA and individual circulating tumor cells"
+    },
+    {
+        "id": 110,
+        "project_id": "GSE44183",
+        "species": "Human/Mouse",
+        "technology": "Tang",
+        "tissue": "Embryo",
+        "title": "Genetic programs in human and mouse early embryos revealed by single-cell RNA sequencing"
+    },
+    {
+        "id": 111,
+        "project_id": "GSE53386",
+        "species": "Human/Mouse",
+        "technology": "SUPeR-Seq",
+        "tissue": "Embryo",
+        "title": "Single-cell RNA-seq transcriptome analysis of linear and circular RNAs in mouse preimplantation embryos"
+    },
+    {
+        "id": 112,
+        "project_id": "GSE96981",
+        "species": "Human/Mouse",
+        "technology": "SMARTer",
+        "tissue": "Liver",
+        "title": "Multilineage communication regulates human liver bud development from pluripotency"
+    },
+    {
+        "id": 113,
+        "project_id": "E-MTAB-3929",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Embryo",
+        "title": "Single-cell RNA-seq of 1,529 cells obtained from 88 human preimplantation embryos ranging from embryonic day 3 to 7"
+    },
+    {
+        "id": 114,
+        "project_id": "E-MTAB-6072",
+        "species": "Human/Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "CD4+ Treg and Tmem cells",
+        "title": "Single-cell RNA-seq of CD4+ Treg and Tmem cells from different tissues in mouse and human"
+    },
+    {
+        "id": 115,
+        "project_id": "E-MTAB-6142",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "myxoid liposarcoma cells",
+        "title": "Transcriptomic characterization of the human cell cycle in individual unsynchronized cells."
+    },
+    {
+        "id": 116,
+        "project_id": "E-MTAB-6386",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "PBMC derived B cells",
+        "title": "Single cell RNA-sequencing of PBMC derived B cells from human healthy donor"
+    },
+    {
+        "id": 117,
+        "project_id": "E-MTAB-6819",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "embryonic stem cell",
+        "title": "Single-cell RNA-seq of naive and primed human embryonic stem cells"
+    },
+    {
+        "id": 118,
+        "project_id": "E-MTAB-7052",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Heart",
+        "title": "Single-cell RNA-seq of of human dermal fibroblasts (different stimulation conditions of dsRNA)"
+    },
+    {
+        "id": 119,
+        "project_id": "E-MTAB-7167",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Heart",
+        "title": "Single-cell RNA-seq of dermal fibroblasts derived from healthy human donors"
+    },
+    {
+        "id": 120,
+        "project_id": "E-MTAB-7381",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "tonsil",
+        "title": "Maturing Human CD127+ CCR7+ PDL1+ Dendritic Cells Express AIRE in the Absence of Tissue Restricted Antigens"
+    },
+    {
+        "id": 121,
+        "project_id": "E-MTAB-7606",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "CD8+ T cells",
+        "title": "Human CD8+ T cell cross-reactivity across influenza A, B and C viruses"
+    },
+    {
+        "id": 122,
+        "project_id": "E-MTAB-8403",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Ovary",
+        "title": "Single cell RNA sequencing of DDX4 antibody positive and negative ovarian tissue cells cultured under oogonial stem cell conditions"
+    },
+    {
+        "id": 123,
+        "project_id": "GSE100618",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Lymph Node",
+        "title": "Single-cell analysis reveals the continuum of human lympho-myeloid progenitor cells"
+    },
+    {
+        "id": 124,
+        "project_id": "GSE103866",
+        "species": "Human",
+        "technology": "Smart-seq",
+        "tissue": "Lung cancer",
+        "title": "Single-cell analysis reveals cancer stem cell heterogeneity in hepatocellular carcinoma"
+    },
+    {
+        "id": 125,
+        "project_id": "GSE105211",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Heart",
+        "title": "Aligning single-cell developmental and reprogramming trajectories identifies molecular determinants of reprogramming outcome"
+    },
+    {
+        "id": 126,
+        "project_id": "GSE106540",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Spleen",
+        "title": "Precursors of human CD4+ cytotoxic T lymphocytes identified by single-cell transcriptome analysis."
+    },
+    {
+        "id": 127,
+        "project_id": "GSE107864",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Breast cancer",
+        "title": "Single-Cell Transcriptome Analysis Reveals Estrogen Signaling Coordinately Augments One-Carbon, Polyamine, and Purine Synthesis in Breast Cancer"
+    },
+    {
+        "id": 128,
+        "project_id": "GSE110499",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Bone marrow",
+        "title": "Linking transcriptional and genetic tumor heterogeneity through allele analysis of single-cell RNA-seq data"
+    },
+    {
+        "id": 129,
+        "project_id": "GSE112507",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "retinal organoid",
+        "title": "CRX Expression in Pluripotent Stem Cell-Derived Photoreceptors Marks a Transplantable Subpopulation of Early Cones"
+    },
+    {
+        "id": 130,
+        "project_id": "GSE113046",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Bone marrow",
+        "title": "Identification of two distinct pathways of human myelopoiesis"
+    },
+    {
+        "id": 131,
+        "project_id": "GSE115210",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Bone Marrow",
+        "title": "Lineage Tracing in Humans Enabled by Mitochondrial Mutations and Single-Cell Genomics"
+    },
+    {
+        "id": 132,
+        "project_id": "GSE117872",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "OSCC",
+        "title": "Longitudinal single-cell RNA sequencing of patient-derived primary cells reveals drug-induced infidelity in stem cell hierarchy"
+    },
+    {
+        "id": 133,
+        "project_id": "GSE118389",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Breast cancer",
+        "title": "Unravelling subclonal heterogeneity and aggressive disease states in TNBC through single-cell RNA-seq"
+    },
+    {
+        "id": 134,
+        "project_id": "GSE118900",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Multiple Myeloma",
+        "title": "Molecular signatures of multiple myeloma progression through single cell RNA-Seq"
+    },
+    {
+        "id": 135,
+        "project_id": "GSE119984",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Unknown",
+        "title": "SMARTer single cell total RNA sequencing"
+    },
+    {
+        "id": 136,
+        "project_id": "GSE123837",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Breast cancer",
+        "title": "Transcriptional diversity and bioenergetic shift in human breast cancer metastasis revealed by single-cell RNA sequencing"
+    },
+    {
+        "id": 137,
+        "project_id": "GSE125288",
+        "species": "Human",
+        "technology": "RamDA-seq ",
+        "tissue": "neural stem cell",
+        "title": "(Updated:An NMF-based approach to discover overlooked differentially expressed gene regions from single-cell RNA-seq data);Discover of overlooked differentially expressed gene regions from single-cell RNA-seq data with neural stem cell derived from human induced pluripotent stem"
+    },
+    {
+        "id": 138,
+        "project_id": "GSE132044",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Unknown",
+        "title": "Systematic comparison of single-cell and single-nucleus RNA-sequencing methods"
+    },
+    {
+        "id": 139,
+        "project_id": "GSE36552",
+        "species": "Human",
+        "technology": "Tang",
+        "tissue": "Embryo",
+        "title": "Single-cell RNA-Seq profiling of human preimplantation embryos and embryonic stem cells"
+    },
+    {
+        "id": 140,
+        "project_id": "GSE44618",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "GM12878 cells",
+        "title": "From single-cell to cell-pool transcriptomes: stochasticity in gene expression and RNA splicing."
+    },
+    {
+        "id": 141,
+        "project_id": "GSE49321",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "HEK293T cells",
+        "title": "Smart-seq2 for sensitive full-length transcriptome profiling in single cells"
+    },
+    {
+        "id": 142,
+        "project_id": "GSE51254",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "HCT116 cells",
+        "title": "Quantitative assessment of single-cell RNA-sequencing methods."
+    },
+    {
+        "id": 143,
+        "project_id": "GSE52529",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Skeletal Muscle",
+        "title": "The dynamics and regulators of cell fate decisions are revealed by pseudotemporal ordering of single cells."
+    },
+    {
+        "id": 144,
+        "project_id": "GSE63818",
+        "species": "Human",
+        "technology": "Tang",
+        "tissue": "primordial germ cells",
+        "title": "The Transcriptome and DNA Methylome Landscapes of Human Primordial Germ Cells."
+    },
+    {
+        "id": 145,
+        "project_id": "GSE64016",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Embryo",
+        "title": "Oscope identifies oscillatory genes in unsynchronized single-cell RNA-seq experiments."
+    },
+    {
+        "id": 146,
+        "project_id": "GSE66053",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Primary foreskin fibroblast cells",
+        "title": "Single mammalian cells compensate for differences in cellular volume and DNA copy number through independent global transcriptional mechanisms."
+    },
+    {
+        "id": 147,
+        "project_id": "GSE67835",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "A survey of human brain transcriptome diversity at the single cell level."
+    },
+    {
+        "id": 148,
+        "project_id": "GSE69405",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Lung cancer",
+        "title": "Single-cell mRNA sequencing identifies subclonal heterogeneity in anti-cancer drug responses of lung adenocarcinoma cells."
+    },
+    {
+        "id": 149,
+        "project_id": "GSE71315",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Single-cell analysis of long non-coding RNAs in the developing human neocortex"
+    },
+    {
+        "id": 150,
+        "project_id": "GSE71318",
+        "species": "Human",
+        "technology": "SUPeR-Seq",
+        "tissue": "Embryo",
+        "title": "Tracing the expression of circular RNAs in human pre-implantation embryos"
+    },
+    {
+        "id": 151,
+        "project_id": "GSE71982",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "Ear",
+        "title": "Single-cell RNA-Seq resolves cellular complexity in sensory organs from the neonatal inner ear"
+    },
+    {
+        "id": 152,
+        "project_id": "GSE73121",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "renal cell carcinoma.",
+        "title": "Application of single-cell RNA sequencing in optimizing a combinatorial therapeutic strategy in metastatic renal cell carcinoma."
+    },
+    {
+        "id": 153,
+        "project_id": "GSE73727",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Pancreas",
+        "title": "Single-cell transcriptomes reveal characteristic features of human pancreatic islet cell types."
+    },
+    {
+        "id": 154,
+        "project_id": "GSE74833",
+        "species": "Mouse",
+        "technology": "SMARTer",
+        "tissue": "CD4+ T cell",
+        "title": "Single-Cell Genomics Unveils Critical Regulators of Th17 Cell Pathogenicity."
+    },
+    {
+        "id": 155,
+        "project_id": "GSE75140",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Human cerebral organoids recapitulate gene expression programs of fetal neocortex development."
+    },
+    {
+        "id": 156,
+        "project_id": "GSE75367",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Breast cancer",
+        "title": "HER2 expression identifies dynamic functional states within circulating breast cancer cells."
+    },
+    {
+        "id": 157,
+        "project_id": "GSE75478",
+        "species": "Human",
+        "technology": "Quartz-Seq &Smart-seq2",
+        "tissue": "Bone marrow\u00a0",
+        "title": "Human haematopoietic stem cell lineage commitment is a continuous process."
+    },
+    {
+        "id": 158,
+        "project_id": "GSE75659",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Heart",
+        "title": "Analysis of allelic expression patterns in clonal somatic cells by single-cell RNA-seq"
+    },
+    {
+        "id": 159,
+        "project_id": "GSE75688",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Breast cancer",
+        "title": "Single-cell RNA-seq enables comprehensive tumour and immune cell profiling in primary breast cancer."
+    },
+    {
+        "id": 160,
+        "project_id": "GSE75748",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "embryonic stem cell",
+        "title": "Single-cell RNA-seq reveals novel regulators of human embryonic stem cell differentiation to definitive endoderm"
+    },
+    {
+        "id": 161,
+        "project_id": "GSE78968",
+        "species": "Human",
+        "technology": "MATQ-seq",
+        "tissue": "HEK293T cells",
+        "title": "Effective detection of variation in single-cell transcriptomes using MATQ"
+    },
+    {
+        "id": 162,
+        "project_id": "GSE81547",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Pancreas",
+        "title": "Single-Cell Analysis of Human Pancreas Reveals Transcriptional Signatures of Aging and Somatic Mutation Patterns."
+    },
+    {
+        "id": 163,
+        "project_id": "GSE83139",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Pancreas",
+        "title": "Single-Cell Transcriptomics of the Human Endocrine Pancreas"
+    },
+    {
+        "id": 164,
+        "project_id": "GSE84465",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "Brain",
+        "title": "Div-Seq: Single-nucleus RNA-Seq reveals dynamics of rare adult newborn neurons"
+    },
+    {
+        "id": 165,
+        "project_id": "GSE86982",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Discovering sparse transcription factor codes for cell states and state transitions during development"
+    },
+    {
+        "id": 166,
+        "project_id": "GSE92276",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Testis",
+        "title": "Chromatin and Single-Cell RNA-Seq Profiling Reveal Dynamic Signaling and Metabolic Transitions during Human Spermatogonial Stem Cell Development."
+    },
+    {
+        "id": 167,
+        "project_id": "GSE93593",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "embryonic stem cell",
+        "title": "Single-Cell Profiling of an In Vitro Model of Human Interneuron Development Reveals Temporal Dynamics of Cell Type Production and Maturation."
+    },
+    {
+        "id": 168,
+        "project_id": "GSE95140",
+        "species": "Human/Mouse",
+        "technology": "Smart-seq2",
+        "tissue": "Heart",
+        "title": "Cardiomyocyte gene programs encoding morphological and functional signatures in cardiac hypertrophy and failure"
+    },
+    {
+        "id": 169,
+        "project_id": "PRJNA379992",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "lupus nephritis",
+        "title": "A single-cell RNA-sequencing approach to dissect heterogeneity in lupus nephritis"
+    },
+    {
+        "id": 170,
+        "project_id": "PRJNA472098",
+        "species": "Human",
+        "technology": "Smart-seq2",
+        "tissue": "IgE B cell",
+        "title": "High-affinity allergen-specific human antibodies cloned from single IgE B cell transcriptomes"
+    },
+    {
+        "id": 171,
+        "project_id": "SRP041736",
+        "species": "Human",
+        "technology": "SMARTer",
+        "tissue": "Brain",
+        "title": "Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex"
+    }
+]

@@ -40,7 +40,7 @@ if (preg_match('/^([a-zA-Z0-9]+):(\d+)-(\d+)$/', $select_pos, $matches)) {
     $map = [];
     $map[] = ['C1', '=', $chromosome];
     $map[] = ['C2', '>', $start_position];
-    $map[] = ['C2', '<', $end_position];
+    $map[] = ['C3', '<', $end_position];
 
 
 

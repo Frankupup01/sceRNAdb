@@ -1,16 +1,5 @@
 <?php
-/*
- * 2024.3.18 Ma-tianyu
- * 封装SQL查询
- * Db类实现了SELECT、DELETE、INSERT、UPDATE
- * 返回的$result为数组对象
- *
- *
- *
- * 2024.6.12 Ma-tianyu
- * 将联合声明8.0PHP特性部分Array|Closure代码重构is_callable函数
- *
- */
+
 class Db {
     public static $tablename;
     public static $where = '';

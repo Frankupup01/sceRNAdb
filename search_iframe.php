@@ -1,225 +1,248 @@
-
 <?php
 include "./templates/base.php";
 ?>
-
-
-<style>
-    .card {
-        margin-bottom: 20px;      /* 卡片下方的空隙 */
-    }
-</style>
-
-<style>
-    .custom-title {
-        font-size: 20px;
-        font-weight: bold;
-        color: #3c53ad;
-        font-family: 'Arial', sans-serif;
-        /*text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        background-color: #f0f0f0;
-        padding: 10px;
-        border-radius: 8px;  圆角边框 */
-    }
-</style>
-
-<body id="body">
-<!--include header-->
 <?php
 include "./templates/header.php";
 ?>
 
-
-
-<!-- id=search_region -->
-
-<script type="text/javascript">
-    function reinitIfra(){
-        var iframe = document.getElementById("search_region");
-        try{
-            var bHeight = iframe.contentWindow.document.body.scrollHeight;
-            var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
-            var height = Math.max(bHeight, dHeight);
-            height = Math.min(height, 800); // 设置最大高度限制
-            iframe.height = height;
-// console.log(height);
-        }catch (ex){}
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
     }
-    window.setInterval("reinitIfra()", 200);
-</script>
 
-
-
-
-<!-- id=search_study -->
-<!--
-<script type="text/javascript">
-    function reinitIfram(){
-        var iframe = document.getElementById("search_study");
-        try{
-            var bHeight = iframe.contentWindow.document.body.scrollHeight;
-            var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
-            var height = Math.max(bHeight, dHeight);
-            iframe.height = height;
-// console.log(height);
-        }catch (ex){}
+    #mainContain,
+    .container {
+        flex: 1 0 auto;
     }
-    window.setInterval("reinitIfram()", 500);
-</script>
--->
 
+    footer, .footer {
+        margin-top: auto;
+    }
 
-<!-- 4 点击触发下拉栏 -->
-<script>
-    /*
-    $(document).ready(function(){
-        $('.card-header').click(function(){
-            var $collapse = $(this).next('.collapse');
-            $collapse.collapse('toggle');
-        });
-    });*/
+    /* === Section 分割线及标题 (通用) === */
+    .section-title {
+        padding: 20px 80px 0; /* 增加上边距，保持协调 */
+        font-size: 22px;
+        font-weight: bold;
+        color: #0362a4;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
-    $(document).ready(function(){
-        $('.card-header').click(function(){
-            // 关闭所有已展开的卡片
-            $('.collapse.show').not($(this).next('.collapse')).collapse('hide');
+    .section-divider {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 15px 80px;
+    }
 
-            // 切换当前点击的卡片
-            var $collapse = $(this).next('.collapse');
-            $collapse.collapse('toggle');
-        });
-    });
-</script>
+    /* === Quick Search 样式 === */
+    .quick-search {
+        width: 100%;
+        padding: 20px 80px 40px; /* 增加底部间距以区分下一个模块 */
+        text-align: center;
+        position: relative;
+    }
+    .quick-search .search-wrapper {
+        position: relative;
+        display: inline-block;
+        width: 60%;
+    }
+    .quick-search input {
+        width: 100%;
+        padding: 10px 50px 10px 15px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+    .quick-search button {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 6px 15px;
+        font-size: 14px;
+        background: #fff;
+        color: #000;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        cursor: pointer;
+        display: none;
+    }
+    .quick-search button:hover {
+        background: #f5f5f5;
+    }
+    .quick-suggestions {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555;
+    }
+    .quick-suggestions span {
+        color: #0362a4;
+        cursor: pointer;
+        margin-right: 10px;
+    }
 
+    /* === 主搜索卡片区域 === */
+    .search-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px 80px 60px;
+    }
 
+    .search-thumb {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        background: #f0f0f0;
+    }
+    .search-thumb img {
+        width: 50%;
+        height: 200px;
+        object-fit: cover;
+        transition: filter 0.3s;
+    }
+    .search-thumb h2 {
+        flex: 1;
+        margin: 0;
+        padding: 0 15px;
+        font-size: 25px;
+        color: #0362a4;
+        font-weight: bold;
+    }
+    .search-thumb:hover img {
+        filter: brightness(0.7);
+    }
+</style>
 
+<div class="container" id="mainContain">
 
-<div class="container" id="body">
-    <div id="accordion" style="margin-top: 10px;">
+    <div class="section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-lightning-charge" viewBox="0 0 16 16">
+            <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z"/>
+        </svg>
+        Quick Search
+    </div>
+    <hr class="section-divider">
 
-        <!-- Genomic Region search开始 id:te-->
-        <div class="card mt-0">
-            <div class="card-header bg-gradient-freestyle" style="line-height:0.1;">
-                <a class="card-link font-weight-bold h5" data-toggle="collapse" href="#collapseGenomicRegion">
-                    Search by <span style="color: #63938c;"> Genomic Region</span>
-                </a>
-            </div>
-            <!--class = collapse show是设置默认为展开-->
-            <div id="collapseGenomicRegion" class="collapse show" data-parent="#accordion">
-                <div class="card-body">
-                    <iframe src="./templates/iframe/iframe_region.php" frameborder="no" height="250px" width='100%' id="search_region"></iframe>
-                </div>
-            </div>
+    <div class="quick-search">
+        <div class="search-wrapper">
+            <input type="text" id="quickSearchInput" placeholder="Quick search...">
+            <button id="quickSearchBtn">Search</button>
         </div>
-        <!-- Genomic Region search结束 -->
-
-
-
-
-
-
-        <!-- Study search开始 no id -->
-        <div class="card mt-0">
-            <div class="card-header bg-gradient-freestyle" style="line-height:0.1;">
-                <a class="card-link font-weight-bold h5" data-toggle="collapse" href="#collapseStudy">
-                    Search by <span style="color: #63938c;">Study</span>
-                </a>
-            </div>
-            <div id="collapseStudy" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <iframe src="./templates/iframe/iframe_studyid.php" frameborder="no" height="290px" width='100%' ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="quick-suggestions">
+            e.g.
+            <span data-value="Breast cancer">Breast cancer</span>
+            <span data-value="Kidney">Kidney</span>
+            <span data-value="E-MTAB-3321">E-MTAB-3321</span>
+            <span data-value="SRR3650299">SRR3650299</span>
         </div>
-        <!-- Study search结束-->
+    </div>
 
 
-        <!-- Tissue search开始 no id -->
-        <!--
-        <div class="card mt-0">
-            <div class="card-header bg-gradient-freestyle" style="line-height:0.1;">
-                <a class="card-link font-weight-bold h5" data-toggle="collapse" href="#collapseStudy">
-                    Search by <span style="color: #63938c;">Tissue</span>
-                </a>
-            </div>
-            <div id="collapseStudy" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <iframe src="./templates/iframe/iframe_t.php" frameborder="no" height="290px" width='100%' ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
-        <!-- Tissue search结束-->
+    <div class="section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+        Detail Search
+    </div>
+    <hr class="section-divider">
 
-        <div class="card mt-0">
-            <div class="card-header bg-gradient-freestyle" style="line-height:0.1;" >
-                <a class="card-link font-weight-bold h5" data-toggle="collapse" href="#collapseCellTissue">
-                    <!--style="font-size: 18px;"-->
-                    <i class="ni ni-zoom-split-in text-white-50"></i> <span class="glyphicon glyphicon-arrow-down"></span>Search by <span style="color: #63938c;">Tissue/ Cell type</span>
-                </a>
-            </div>
-            <div id="collapseCellTissue" class="collapse" data-parent="#accordion" >
-                <div class="row" style="padding: 25px;">
-                <div class="card-body col-lg-6">
-                    <h1 style="font-size: 14px;" class="custom-title">Search by Tissue Type</h1>
-                    <iframe src="templates/iframe/iframe_tissue.php" frameborder="no" height="300px" width='100%' id="test"></iframe>
-                </div>
-                <div class="card-body col-lg-6">
-                    <h1 style="font-size: 14px;" class="custom-title">Search by Cell Type</h1>
-                    <iframe src="templates/iframe/iframe_cell.php" frameborder="no" height="300px" width='100%' id="tes"></iframe>
-                </div>
-                </div>
-            </div>
+    <div class="search-grid">
+        <div class="search-thumb" data-target="region">
+            <img src="./public/image/search/region.png" alt="Genomic Region">
+            <h2>Genomic Region</h2>
         </div>
 
-
-        <div class="card mt-0">
-            <div class="card-header bg-gradient-freestyle" style="line-height:0.1;">
-                <a class="card-link font-weight-bold h5" data-toggle="collapse" href="#collapseStudy">
-                    Search by <span style="color: #63938c;">Single Sample</span>
-                </a>
-            </div>
-            <div id="collapseStudy" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <iframe src="./templates/iframe/iframe_sample.php" frameborder="no" height="450px" width='100%' ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="search-thumb" data-target="study">
+            <img src="./public/image/search/study.png" alt="Study">
+            <h2>Study</h2>
         </div>
 
+        <div class="search-thumb" data-target="tissue">
+            <img src="./public/image/search/tissue.png" alt="Tissue">
+            <h2>Tissue / Cell Type</h2>
+        </div>
 
-
-
+        <div class="search-thumb" data-target="sample">
+            <img src="./public/image/search/sample.png" alt="Sample">
+            <h2>Single Sample</h2>
+        </div>
     </div>
 </div>
 
+<script>
+    // === 点击卡片新开网页的逻辑 ===
+    document.querySelectorAll('.search-thumb').forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            const targetId = thumb.dataset.target;
+            let targetUrl = '';
 
+            switch (targetId) {
+                case 'region':
+                    targetUrl = './templates/iframe/iframe_region.php';
+                    break;
+                case 'study':
+                    targetUrl = './templates/iframe/iframe_studyid.php';
+                    break;
+                case 'tissue':
+                    targetUrl = './templates/iframe/iframe_cell.php';
+                    break;
+                case 'sample':
+                    targetUrl = './templates/iframe/iframe_sample.php';
+                    break;
+            }
 
+            if (targetUrl) {
+                // 打开新标签页
+                window.open(targetUrl, '_blank');
+            }
+        });
+    });
 
+    // === Quick Search 逻辑 ===
+    const input = document.getElementById('quickSearchInput');
+    const btn = document.getElementById('quickSearchBtn');
 
+    function doQuickSearch() {
+        let keyword = input.value.trim();
+        if (keyword) {
+            window.location.href = "quick_search.php?keyword=" + encodeURIComponent(keyword);
+        }
+    }
 
-<!--include footer-->
+    input.addEventListener('input', () => {
+        btn.style.display = input.value.trim() ? 'inline-block' : 'none';
+    });
+
+    document.querySelectorAll('.quick-suggestions span').forEach(span => {
+        span.addEventListener('click', () => {
+            input.value = span.dataset.value; // 填充输入框
+            doQuickSearch(); // 关键修改：直接调用搜索并跳转
+        });
+    });
+
+    btn.addEventListener('click', doQuickSearch);
+
+    input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            doQuickSearch();
+        }
+    });
+</script>
+
 <?php
 include "./templates/footer.php";
 ?>
-
-
-
-
-
-
 </body>
 </html>

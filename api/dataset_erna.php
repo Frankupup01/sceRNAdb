@@ -129,4 +129,5 @@ $response = array(
     "aaData" => $result
 );
 
+
 echo json_encode($response, JSON_UNESCAPED_UNICODE);

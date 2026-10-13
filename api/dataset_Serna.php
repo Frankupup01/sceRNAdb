@@ -56,7 +56,7 @@ $targetGeneMap = [
     ['Dataset', '=', $sid],
 ];
 
-$targetGenes = Db::table('TargetGene')
+$targetGenes = Db::table('TargetGene_SeRNA')
     ->where($targetGeneMap)
     ->select();
 

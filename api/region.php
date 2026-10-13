@@ -37,10 +37,11 @@ if (array_key_exists($select_specie, $specie_map)) {
 
 // 根据物种映射，构造查询条件
 //$species_to_query = $specie_map[$select_specie];
-$map[] = ['Species', '=', $select_specie];
-$map[] = ['Technology', '=', $select_experiment];
-$map[] = ['Tissue', '=', $select_tissue];
-$map[] = ['CellType', '=', $select_cell];
+// 使用 LIKE 实现不区分大小写匹配
+$map[] = ['Species', 'LIKE', $select_specie];
+$map[] = ['Technology', 'LIKE', $select_experiment];
+$map[] = ['Tissue', 'LIKE', $select_tissue];
+$map[] = ['CellType', 'LIKE', $select_cell];
 
 $result = Db::table('OverallSample')->where($map)
     ->field('DatasetID, SampleID')->select();
@@ -55,6 +56,12 @@ foreach ($result as $row) {
 $unique_tech_ids = array_unique($tech_ids);
 // 格式化为数组形式
 $response = array_values($unique_tech_ids);  // 保证返回的数组索引从 0 开始
+// 【防崩溃机制】：如果查不到对应的数据集，直接返回空表
+if (empty($response)) {
+    $draw = isset($_POST['draw']) ? intval($_POST['draw']) : 1;
+    echo json_encode(["draw" => $draw, "recordsTotal" => 0, "recordsFiltered" => 0, "data" => []]);
+    exit;
+}
 // 返回 JSON 格式
 //echo json_encode($response);
 

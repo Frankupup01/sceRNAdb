@@ -82,10 +82,10 @@ where(function ($query) use ($searchQuery) {
         ["Species", "like", $searchQuery],
         ["Tissue", "like", $searchQuery],
         ["CellType", "like", $searchQuery],
-        ["Technology", "like", $searchQuery],
+        ["Platforms", "like", $searchQuery],
     ]);
 })->
-field('DatasetID, Species, SampleID, Tissue, CellType, Technology')->count();
+field('DatasetID, Species, SampleID, Tissue, CellType, Technology,Platforms')->count();
 
 
 
@@ -100,9 +100,10 @@ where(function ($query) use ($searchQuery) {
         ["Tissue", "like", $searchQuery],
         ["CellType", "like", $searchQuery],
         ["Technology", "like", $searchQuery],
+        ["Platforms", "like", $searchQuery],
     ]);
 })->
-field('DatasetID, Species, SampleID, Tissue ,Disease, CellType,Treatment, Technology')->
+field('DatasetID, Species, SampleID, Tissue ,Disease, CellType,Treatment, Technology,Platforms')->
 order($columnName . ' ' . $columnSortOrder)->
 limit($row, $rowperpage)->select();
 

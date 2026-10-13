@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 session_start();
 $DS = DIRECTORY_SEPARATOR;
@@ -42,12 +42,12 @@ $map[] = ['Species', 'IN', $species_to_query];
 
 
 
-$result = Db::table('OverallSample')->where($map)->field('Technology')->select();
+$result = Db::table('OverallSummary')->where($map)->field('Technology')->select();
 
 // 从查询结果中提取 project_id 值
 $tech_ids = [];
 foreach ($result as $row) {
-    $tech_ids[] = $row['Technology'];  // 假设您的字段名是 project_id
+    $tech_ids[] = $row['Technology'];
 }
 
 // 去重处理

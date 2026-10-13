@@ -45,7 +45,6 @@ if (preg_match('/^([a-zA-Z0-9]+):(\d+)-(\d+)$/', $select_pos, $matches)) {
 
 
 // 构建查询
-//$data = Db::name('your_table_name')->where($map)->select();
 
 //$totalRecords 总条目的数量计数
     $totalRecords = Db::table('human_m6A')->where($map)->count();

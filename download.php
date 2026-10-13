@@ -54,16 +54,33 @@ include "./templates/header.php";
 
     .d-flex {
         display: flex;
-        flex-wrap: wrap; /* 允许换行 */
+
     }
 
     .justify-content-start {
         justify-content: flex-start;
     }
+    /* 页面整体最小高度 100% */
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
 
+    /* 主内容区域，占据剩余空间 */
+    #mainContain,
+    .container {
+        flex: 1 0 auto;
+    }
+
+    /* footer 永远贴底 */
+    footer, .footer {
+        margin-top: auto;
+    }
 </style>
 
-<div class="col-lg-12" style="width: 80%; margin: 0 auto;">
+<div class="col-lg-12" style="width: 80%; margin: 0 auto;padding-right: 50px;padding-left: 50px;">
 
     <div class="container-fluid" >
         <div class="row">

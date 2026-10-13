@@ -5,97 +5,157 @@ $DS = DIRECTORY_SEPARATOR;
 require dirname(__DIR__)."{$DS}app{$DS}Db.class.php";
 require dirname(__DIR__)."{$DS}app{$DS}Func.php";
 
-
-
 $select_specie = $_POST['select_specie'];
 $select_experiment = $_POST['select_experiment'];
 $select_tissue = $_POST['select_tissue'];
 
-//表单输入
-$draw = $_POST['draw']; //绘制计数器。这个是用来确保Ajax从服务器返回的是相对应的（Ajax是异步的，因此返回的顺序是不确定的）
-$row = $_POST['start']; //分页第一条数据的起始位置，比如0代表第一条数据
-$rowperpage = $_POST['length']; // Rows display per page| 表格在当前绘制显示多少条数据。服务器返回的记录将等于该数目，除非服务器返回的记录数较少。
-$columnIndex = $_POST['order'][0]['column']; // Column index | 那些列需要应用排序。这是对columns 数组的索引引用，并且也会提交到服务端
-$columnName = $_POST['columns'][$columnIndex]['data']; // Column name | columns 绑定的数据源，由 columns.dataOption 定义
-$columnSortOrder = $_POST['order'][0]['dir']; // asc or desc | 对应列的排序方向。 desc 降序， asc升序。
-$searchValue = $_POST['search']['value']; // Search value | 全局的搜索值。值会应用到每一列
-
+// 表单输入
+$draw = $_POST['draw'];
+$row = $_POST['start'];
+$rowperpage = $_POST['length'];
+$columnIndex = $_POST['order'][0]['column'];
+$columnName = $_POST['columns'][$columnIndex]['data'];
+$columnSortOrder = $_POST['order'][0]['dir'];
+$searchValue = $_POST['search']['value'];
 
 $searchQuery = '%'.$searchValue.'%';
 
-
 $map = [];
 
-// 判断并添加物种的查询条件
 if (!empty($select_specie)) {
-    $map[] = ['Species', '=', $select_specie];
+    if ($select_specie === 'NA') {
+        $map[] = ['Species', 'in', ['', 'NA', 'na']];
+    } else {
+        $map[] = ['Species', '=', $select_specie];
+    }
 }
-
-// 判断并添加实验和组织的查询条件
 if (!empty($select_experiment)) {
-    $map[] = ['Technology', '=', $select_experiment];
+    if ($select_experiment === 'NA') {
+        $map[] = ['Technology', 'in', ['', 'NA', 'na']];
+    } else {
+        $map[] = ['Technology', '=', $select_experiment];
+    }
 }
-
 if (!empty($select_tissue)) {
-    $map[] = ['Tissue', '=', $select_tissue];
+    if ($select_tissue === 'NA') {
+        $map[] = ['Tissue', 'in', ['', 'NA', 'na']];
+    } else {
+        $map[] = ['Tissue', '=', $select_tissue];
+    }
 }
 
-// 构建查询
-//$data = Db::name('your_table_name')->where($map)->select();
+// -------------------------------------------------------------
+// 核心逻辑 1：解决搜索问题 (从 OverallSample 中预查 Disease)
+// -------------------------------------------------------------
+$matched_dataset_ids = [];
+if (!empty($searchValue)) {
+    // 疾病字段在 OverallSample 中，且关联列叫 DatasetID
+    $disease_matches = Db::table('OverallSample')
+        ->where([['Disease', 'like', $searchQuery]])
+        ->select();
 
-//$totalRecords 总条目的数量计数
+    if ($disease_matches) {
+        foreach ($disease_matches as $dm) {
+            if (!empty($dm['DatasetID'])) {
+                $matched_dataset_ids[] = $dm['DatasetID'];
+            }
+        }
+        $matched_dataset_ids = array_unique($matched_dataset_ids);
+    }
+}
+
+// -------------------------------------------------------------
+// 核心逻辑 2：主体统计与查询 (只在 OverallSummary 中查，字段只有 Accessions)
+// -------------------------------------------------------------
+// 1. 总记录数
 $totalRecords = Db::table('OverallSummary')->where($map)->count();
 
-
-//$totalRecordwithFilter 符合筛选条件的条目的数量统计
-    $totalRecordwithFilter = Db::table('OverallSummary')->where($map)->
-
-
-//调用闭包函数query并且允许使用外部变量searchQuery
-    where(function ($query) use ($searchQuery) {
-        $query->whereOr([
+// 2. 过滤后的记录数
+$totalRecordwithFilter = Db::table('OverallSummary')->where($map)
+    ->where(function ($query) use ($searchQuery, $matched_dataset_ids) {
+        $orConditions = [
             ["Species", "like", $searchQuery],
             ["Reference", "like", $searchQuery],
             ["Accessions", "like", $searchQuery],
             ["Tissue", "like", $searchQuery],
             ["Technology", "like", $searchQuery],
-        ]);
-    })->
-    field('Species, Reference, Accessions, Tissue, Technology')->count();
+            ["Platform", "like", $searchQuery]
+        ];
+        // 如果在 Sample 表查到了匹配的疾病，用 Accessions 去接应它
+        if (!empty($matched_dataset_ids)) {
+            $orConditions[] = ["Accessions", "in", $matched_dataset_ids];
+        }
+        $query->whereOr($orConditions);
+    })->count();
 
+// 3. 提取主体数据
+// 如果前端点击了 Disease 列头进行排序，我们退回默认的 Sort_Index 排序，防止数据库报错
+$orderField = ($columnName === 'Disease') ? 'Sort_Index' : $columnName;
 
-
-    #$result = Db::table('OverallSummary')->where($map)->
-    $result = Db::table('OverallSummary')->where($map)->
-
-//调用闭包函数query并且允许使用外部变量searchQuery
-    where(function ($query) use ($searchQuery) {
-        $query->whereOr([
+$result = Db::table('OverallSummary')->where($map)
+    ->where(function ($query) use ($searchQuery, $matched_dataset_ids) {
+        $orConditions = [
             ["Species", "like", $searchQuery],
             ["Reference", "like", $searchQuery],
             ["Accessions", "like", $searchQuery],
             ["Tissue", "like", $searchQuery],
             ["Technology", "like", $searchQuery],
-        ]);
-    })->
-    field('Species, Reference, Accessions, Tissue, Technology, Sort_Index')->
-    order($columnName . ' ' . $columnSortOrder)->
-    limit($row, $rowperpage)->select();
+            ["Platform", "like", $searchQuery]
+        ];
+        if (!empty($matched_dataset_ids)) {
+            $orConditions[] = ["Accessions", "in", $matched_dataset_ids];
+        }
+        $query->whereOr($orConditions);
+    })
+    ->field('Species, Reference, Accessions, Tissue, Technology, Platform, Sort_Index')
+    ->order($orderField . ' ' . $columnSortOrder)
+    ->limit($row, $rowperpage)
+    ->select();
 
+// -------------------------------------------------------------
+// 核心逻辑 3：将 Disease 数据拼接到结果中
+// -------------------------------------------------------------
+if ($result) {
+    foreach ($result as $key => $val) {
+        // OverallSummary 的主键叫 Accessions
+        $accession_id = isset($val['Accessions']) ? $val['Accessions'] : '';
 
+        if (!empty($accession_id)) {
+            // 去 OverallSample 表中查询疾病，条件是 OverallSample.DatasetID = OverallSummary.Accessions
+            $sample_data = Db::table('OverallSample')
+                ->where([['DatasetID', '=', $accession_id]])
+                ->select();
 
-//$data
-    $data = array();
+            $disease_arr = [];
+            if ($sample_data) {
+                foreach ($sample_data as $sd) {
+                    if (!empty($sd['Disease']) && $sd['Disease'] !== 'NA' && $sd['Disease'] !== 'na') {
+                        $disease_arr[] = trim($sd['Disease']);
+                    }
+                }
+            }
 
-    $response = array(
-        "draw" => intval($draw),
-        "iTotalRecords" => $totalRecords,
-        "iTotalDisplayRecords" => $totalRecordwithFilter,
-        "aaData" => $result
-    );
+            $disease_arr = array_unique($disease_arr);
+            // 拼装成字符串，赋值给当前行
+            $result[$key]['Disease'] = empty($disease_arr) ? 'NA' : implode(', ', $disease_arr);
+        } else {
+            $result[$key]['Disease'] = 'NA';
+        }
+    }
+} else {
+    $result = [];
+}
 
-    echo json_encode($response, JSON_UNESCAPED_UNICODE);
+// 4. 返回前端
+$response = array(
+    "draw" => intval($draw),
+    "iTotalRecords" => $totalRecords,
+    "iTotalDisplayRecords" => $totalRecordwithFilter,
+    "aaData" => $result
+);
 
+echo json_encode($response, JSON_UNESCAPED_UNICODE);
+?>
 
 
 

@@ -40,17 +40,17 @@ $sid = $response[0];
 
 //echo $response[0];
 
-// 1️⃣ 读取 JSON 文件内容
+// 读取 JSON 文件内容
 $jsonFile = "../json/sample_erna/{$sid}_SeRNA_expression.json";
 $jsonData = file_get_contents($jsonFile);
 
-// 2️⃣ 将 JSON 数据解码为 PHP 数组
+//  将 JSON 数据解码为 PHP 数组
 $data = json_decode($jsonData, true); // 将 JSON 解码为 PHP 数组
 
-// 3️⃣ 选择要提取的 cell
+//  选择要提取的 cell
 $targetCell = $select_sample; // 你要提取的 cell 名称
 
-// 4️⃣ 检查 cell 是否存在，并提取 expressed_erna 的基因名
+//  检查 cell 是否存在，并提取 expressed_erna 的基因名
 $geneList = [];
 foreach ($data as $cellData) {
     if ($cellData['cell'] === $targetCell && isset($cellData['expressed_erna'])) {
@@ -59,7 +59,7 @@ foreach ($data as $cellData) {
     }
 }
 
-// 5️⃣ 输出结果
+//  输出结果
 //print_r($geneList);
 
 
@@ -109,12 +109,15 @@ $data = array();
 
 $response2 = array(
     "draw" => intval($draw),
-    "iTotalRecords" => $totalRecords,
-    "iTotalDisplayRecords" => $totalRecordwithFilter,
-    "aaData" => $result2
+    "recordsTotal" => intval($totalRecords),
+    "recordsFiltered" => intval($totalRecordwithFilter),
+    "data" => $result2
 );
 
+// 输出 JSON
+header('Content-Type: application/json; charset=utf-8');
 echo json_encode($response2, JSON_UNESCAPED_UNICODE);
+exit;
 
 
 

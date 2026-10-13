@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <link rel="icon" type="image/x-icon" href="./public/LCBB.ico"/>
     <link href="./bootstrap5/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="./bootstrap5/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -32,12 +33,13 @@
     <!-- datatables -->
     <script src="./bootstrap5/js/jquery.dataTables.min.js"></script>
     <script src="./echarts-5.5.0/dist/echarts.js"></script>
+    <script src="./bootstrap5/cloud/tagcanvas.min.js"></script>
     <!--<script src="./public/js/selectmenu.js"></script>-->
 
-    <script src="../bootstrap5/DataTables/dataTables.buttons.min.js"></script>
-    <script src="../bootstrap5/DataTables/buttons.bootstrap4.min.js"></script>
-    <script src="../bootstrap5/DataTables/buttons.html5.min.js"></script>
-    <script src="../bootstrap5/DataTables/buttons.print.min.js"></script>
+    <script src="./bootstrap5/DataTables/dataTables.buttons.min.js"></script>
+    <script src="./bootstrap5/DataTables/buttons.bootstrap4.min.js"></script>
+    <script src="./bootstrap5/DataTables/buttons.html5.min.js"></script>
+    <script src="./bootstrap5/DataTables/buttons.print.min.js"></script>
 <!--
     <script src="../bootstrap5/DataTables/jquery.dataTables.min.js"></script>
     <script src="../bootstrap5/DataTables/dataTables.bootstrap4.min.js"></script>
@@ -47,7 +49,7 @@
     <script src="../bootstrap5/DataTables/buttons.html5.min.js"></script>
     <script src="../bootstrap5/DataTables/buttons.print.min.js"></script>
 -->
-    <title>eRNA scAtlas</title>
+    <title>sceRNAdb</title>
     <!--
     <style>
         div{background-color: rgba(0, 0, 255, 0.178);padding: 10px;margin: 10px;}
